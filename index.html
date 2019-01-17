@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style class="vjs-styles-defaults">
+    .video-js {
+        width: 300px;
+        height: 150px;
+    }
+    .vjs-fluid {
+        padding-top: 56.25%
+    }
+    </style>
+    <style class="vjs-styles-dimensions">
+    .my-video-dimensions {
+        width: 1920px;
+        height: 1080px;
+    }
+    .my-video-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>商信链</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/swiper-4.1.6.min.css" rel="stylesheet">
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="css/windows10/windows10.css" rel="stylesheet">
+    <link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+    <link href="css/index.css?v=43" rel="stylesheet">
+    <!--加载-->
+    <link href="css/pace-theme-barber-shop.css" rel="stylesheet">
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery.1.11.min.js"></script>
+    <script>
+        /* 设置html */
+        window.onload = function(){
+            changeWidth();
+            window.onresize = function(){
+                changeWidth();
+            };
+            function changeWidth(){
+                var width = $("#zatGo_earth").width();
+                $("html").css("font-size",width/30+"px");
+            }
+        };
+    </script>
+</head>
+<script>
+//    function btn(url) {
+//        window.location.href=url;
+//    }
+</script>
+<body class="pace-done" style=""><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+    <div class="pace-progress-inner"></div>
+</div>
+    <div class="pace-activity"></div></div>
+<!-- 100% 超出部分隐藏 -->
+<div class="wrapper">
+    <div class="culmn">
+        <!-- 导航 -->
+        <nav class="nav" id="nav">
+            <div class="container clearfix">
+                <div class="nav-logo">
+                    <img src="images/logo.png" height="80%">
+                </div>
+                <div class="navbar-collapse" id="nav-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:;" class="swiper_list1">首页</a></li>
+                        <li><a href="https://github.com/BusinessCredit" class="">GitHub</a></li>
+                        <li><a href="javascript:;" class="swiper_list2">白皮书</a></li>
+                        <!--<li><a href="javascript:;" class="swiper_list3">关于BCAC</a></li>-->
+                        <!--<li><a href="javascript:;" class="swiper_list4">项目</a></li>-->
+                        <!--<li><a href="javascript:;" class="swiper_list5">路线图</a></li>-->
+                        <li><a href="javascript:;" class="smoothscroll swiper_list6" title="">团队</a></li>
+                        <li><a href="file/BCAC%20Foundation.pdf" class="smoothscroll" title="">资质</a></li>
+                        <!--<li><a href="javascript:;" class="swiper_list7">伙伴</a></li>-->
+                        <!--<li><a href="javascript:;" class="swiper_list8">钱包</a></li>-->
+                        <li><a href="javascript:;" class="swiper_list8">产品</a></li>
+                        <li><a href="javascript:;" class="swiper_list9">动态</a></li>
+                        <li><a href="javascript:;" class="swiper_list9">联系我们</a></li>
+                        <li><a href="index_en.html" >中文/EN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 手机导航 -->
+        <div class="nav_phone" id="nav_phone">
+            <a id="header-menu-trigger" href="javascript:;">
+                <span class="header-menu-icon"></span>
+            </a>
+            <div class="phone_logo">
+                <img src="images/logo.png" width="100%" alt="logo">
+            </div>
+        </div>
+        <nav id="menu-nav-wrap">
+            <a href="javascript:;" class="close-button" title="close"><span>Close</span></a>
+            <h3>BCAC</h3>
+            <ul class="nav-list">
+                <li class="current"><a class="smoothscroll swiper_list1" href="javascript:;" title="">首页</a></li>
+                <li><a class="smoothscroll" href="https://github.com/BusinessCredit" title="">GitHub</a></li>
+                <li><a class="smoothscroll swiper_list2" href="javascript:;" title="">白皮书</a></li>
+                <!--<li><a class="smoothscroll swiper_list3" href="javascript:;" title="">关于BCAC</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list4" href="javascript:;" title="">项目</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list5" href="javascript:;" title="">路线图</a></li>-->
+                <li><a class="smoothscroll swiper_list6" href="javascript:;" title="">团队</a></li>
+                <li><a class="smoothscroll" href="file/BCAC%20Foundation.pdf" title="">资质</a></li>
+                <!--<li><a class="smoothscroll swiper_list7" href="javascript:;" title="">伙伴</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list8" href="javascript:;" title="">钱包</a></li>-->
+                <li><a class="smoothscroll swiper_list8" href="javascript:;" title="">产品</a></li>
+                <li><a class="smoothscroll swiper_list9" href="javascript:;" title="">动态</a></li>
+                <li><a class="smoothscroll swiper_list9" href="javascript:;" title="">联系我们</a></li>
+                <li><a class="smoothscroll" href="index_en.html" title="">中文/EN</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!--返回首页按钮-->
+    <div class="go_up" style="display: block;">
+        <i class="icon-UpArrow"></i>
+    </div>
+    <div class="swiper-container swiper-container-vertical" id="main_swiper">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+<!--首页-->
+            <div class="swiper-slide main swiper-slide-prev" id="first_page">
+                <div class="first_bg" style="display: none"></div>
+                <div class="main_cont">
+                    <section class="zatGo_earth clearfix" id="zatGo_earth">
+                        <div class="travel_nr z-index">
+                            <div class="cont_title animate-this" style="color: #fff;">BCAC</div>
+                            <div class="cont_text animate-this" style="color: #fff">
+                                <p>构建基于区块链的新零售商业信用经济生态</p>
+                            </div>
+                            <div class="cont_icon_list clearfix">
+                                <ul class="clearfix">
+                                    <!--facebook-->
+                                    <li class="animate-this" onclick="window.open('https://facebook.com/BCAChain')"></li>
+                                    <!--twitter-->
+                                    <li class="animate-this" onclick="window.open('https://twitter.com/BCAChain')"></li>
+                                    <!--电报-->
+                                    <li class="animate-this" onclick="window.open('https://t.me/bcachainofficial')"></li>
+                                    <!--github-->
+                                    <li class="animate-this" onclick="window.open('https://github.com/BusinessCredit')"></li>
+                                    <!--首席客服微信-->
+                                    <!--<li class="animate-this" onclick="window.open('download/release/service.html')"></li>-->
+                                </ul>
+                            </div>
+                            <div class="cont_title animate-this" style="color: #fff">
+                                <div class="top_btn animate-this" style="">
+                                    <a href="download/release/index.html" id="down_btn" target="_blank">下载BCAC&nbsp;&nbsp;钱包</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--<div class="earth_img" style="display: none">-->
+                        <!--<img src="images/first_img3.png" width="100%" alt=""/>-->
+                        <!--</div>-->
+                        <!--<div class="earth_plane">-->
+                        <!--<img src="images/plane/plane.png" width="100%"/>-->
+                        <!--</div>-->
+                    </section>
+                </div>
+            </div>
+ <!--白皮书-->
+            <div class="swiper-slide main white_main ani-slide swiper-slide-active">
+                <div class="main_cont" id="white">
+                    <section class="white_paper z-index clearfix">
+                        <div class="white_nr">
+                            <div class="cont_title animate-this">白皮书</div>
+                            <div class="bottom_border border_color1 animate-this"></div>
+                            <div class="cont_text">
+                                <p class="animate-this">BCAC：构建基于区块链的新零售商业信用经济生态</p>
+                            </div>
+                            <div class="white_btn animate-this">
+                                <a href="file/BCAChain.pdf" target="_blank">下载</a>
+                            </div>
+                        </div>
+                        <div class="white-img animate-this">
+                            <img src="images/white-img1.png" width="" height="" align="">
+                        </div>
+                    </section>
+                </div>
+            </div>
+<!--关于BCAC-->
+            <div class="swiper-slide main swiper-slide-next">
+                <div class="main_cont" id="about">
+                    <section class="what_zatGo z-index clearfix">
+                        <div class="what_bg" style="height: 110%;bottom: -60%;left: -13%;width: 120%"></div>
+                        <div class="what_nr">
+                            <div class="cont_title animate-this">关于BCAC</div>
+                            <div class="bottom_border border_color2 animate-this"></div>
+                            <div class="cont_text">
+                                <p class="animate-this">
+                                    <span style="display: inline-block; margin-bottom: 6px;">BCAChain(商信链)是由在金融、零售、社交电商等领域从业数十年的业内精英和原IBM区块链实验室技术成员于2018年初共同发起的区块链行业应用项目，聚焦千亿级新零售市场，旨在构建基于区块链的新零售商业信用经济生态。 </span>
+                                    <span style="display: inline-block; margin-bottom: 6px;">BCAChain（商信链）首次提出RAFT共识，应用KYC等认证技术来加速和优化区块链领域的落地应用。BCAChain（商信链）正在打造自有私链技术的去中心化的新零售平台，助力区块链和新零售实体产业的发展。</span>
+                                    <span style="display: inline-block; margin-bottom: 6px;">目前BCAChain（商信链）已经完成区块链底层代码开源和DAPP钱包的发布。</span>
+                                    <!--<span style="display: inline-block; margin-bottom: 6px;">BCAChain（商信链）正在打造自有私链技术的去中心化的新零售平台，助力区块链和新零售实体产业的发展。</span>-->
+                                    <span style="display: inline-block; margin-bottom: 6px;">2018年11月8日BCAC基金会（商信链）正式加入中国云体系产业创新战略联盟成为理事单位。</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="what_video animate-this" style="margin-left: 7.7%">
+                            <img src="images/bcac_img_porject.png" alt="" style="width: 700px">
+                        </div>
+                    </section>
+                </div>
+            </div>
+<!--项目-->
+            <div class="swiper-slide main">
+                <div class="main_cont" id="project">
+                    <section class="weDo_zatGo clearfix">
+                        <div class="weDo_bg1"></div>
+                        <div class="weDo_bg2"></div>
+                        <div class="weDo_nr z-index">
+                            <div class="cont_title animate-left opacity">我们的工作</div>
+                            <div class="bottom_border border_color2 animate-this"></div>
+                            <div class="cont_text">
+                                <p class="animate-right opacity">
+                                    BCAC商信链将全面启动零售溯源计划，利用区块链技术、物联网技术以及大数据跟踪零售商品全链路，确保商品信息完整。
+                                    并利用区块链技术加强用户数据的隐私保护，以低成本建立共识信任。打造大数据体系深入分析客户获知客户需求，提升购物体验。
+                                    应用场景包括：新零售、个人信用体系、企业信用体系等。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="weDo_img">
+                            <div class="weDo_img_cont1 animate-this">
+                                <img src="images/weDo_img3.png" width="100%" alt="">
+                                <p class="weDo_img_text" style="margin-top: -0.5rem">重塑新零售体系，降低成本</p>
+                            </div>
+                            <div class="weDo_img_cont2 animate-this">
+                                <p class="weDo_img_text">建立零售信任</p>
+                                <img src="images/weDo_img4.png" width="100%" alt="">
+
+                            </div>
+                            <div class="weDo_img_cont3 animate-this">
+                                <p class="weDo_img_text">打造大数据体系</p>
+                                <img src="images/weDo_img5.png" width="100%" alt="">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+<!--路线图-->
+            <div class="swiper-slide main" style="background: #F3F8FB">
+                <div class="main_cont" id="road">
+                    <section class="road_map clearfix">
+                        <div class="road_title">
+                            <h3 class="cont_title animate-this">路线图</h3>
+                            <span class="bottom_border border_color2 animate-this"></span>
+                        </div>
+
+                        <div class="road_cont animate-this">
+                            <img src="images/ReoadMap.png" width="100%" alt="ReoadMap">
+                        </div>
+                        <div class="road_cont_phone swiper-container swiper-container-vertical swiper-container-free-mode">
+                            <div class=" swiper-wrapper" style="transition-duration: 0ms;">
+                                <div class="swiper-slide road_phone_slide">
+                                    <img src="images/ReoadMap2.png" width="100%" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"><div class="swiper-scrollbar-drag"></div></div>
+                            <div class="road_mask"></div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+<!--团队-->
+            <div class="swiper-slide main" id="team">
+                <div class="main_cont">
+                    <section class="operation_team">
+                        <div class="team_title">
+                            <h5 class="cont_title animate-this">主创团队</h5>
+                            <span class="bottom_border border_color1 animate-this"></span>
+                        </div>
+                        <div class="operation_nr operation_nr_pc">
+                            <ul class="row">
+                                <li class="col-lg-6 col-md-6 col-xs-12">
+                                    <img src="images/Tim.png" class="list_img animate-this">
+                                    <div class="list_cont">
+                                        <span class="list_name animate-this">杨荣添（Tim）</span>
+                                        <p class="list_introduce animate-this" style="margin-top: 8px;">
+                                            毕业于奥克兰理工大学，金融硕士研究生。拥有多年海外投资、跨境电商全球渠道拓展及供应链金融从业经验，近年来专注于区块链技术解决新零售行业问题的研究和实践。                                         </p>
+                                    </div>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-xs-12">
+                                    <img src="images/Max.png" class="list_img animate-this">
+                                    <div class="list_cont">
+                                        <span class="list_name animate-this">蔡壮 （Max）</span>
+                                        <p class="list_introduce animate-this" style="margin-top: 8px;">
+                                            中国云体系联盟常务理事，中国通信工业协会区块链专业委员会委员.对传统行业转型新零售领域有深入的研究，参与和投资了多个新零售相关项目。                                     </p>
+                                    </div>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-xs-12">
+                                    <img src="images/Tommy.png" class="list_img animate-this">
+                                    <div class="list_cont">
+                                        <span class="list_name animate-this">文沛（Tommy）</span>
+                                        <p class="list_introduce animate-this" style="margin-top: 8px;">
+                                            计算机硕士，曾是世界500强科技企业大数据团队的资深工程师，在众多大数据项目中担任架构师/项目经理。
+                                            曾入选该企业区块链实验室并担任研究员，对分布式计算及区块链技术有深入的研究，也是全球大数据开源项目的积极贡献者。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-xs-12">
+                                    <img src="images/Dufren.png" class="list_img animate-this">
+                                    <div class="list_cont">
+                                        <span class="list_name animate-this">杨成武（Dufren）</span>
+                                        <p class="list_introduce animate-this" style="margin-top: 8px;">
+                                            四川外语学院本硕双学位，精通英语，西班牙语2013年因翻译ETH白皮书结缘数字货币并投身其中，IOTA，BYTEBALL，NXT早期投资人。
+                                            曾参与多个区块链项目的顶层设计与实施。
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="operation_nr operation_nr_phone">
+                            <div class="swiper-container operation_img swiper-container-horizontal" style="margin: 30px auto">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                    <div class="swiper-slide swiper_img animate-this" style=""><img src="images/Tim.png" width="100%" alt=""></div>
+                                    <div class="swiper-slide swiper_img animate-this" style=""><img src="images/Tommy.png" width="100%" alt=""></div>
+                                    <div class="swiper-slide swiper_img animate-this" style=""><img src="images/Max.png" width="100%" alt=""></div>
+                                    <div class="swiper-slide swiper_img animate-this" style=""><img src="images/Dufren.png" width="100%" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="swiper-container operation_text swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                    <div class="swiper-slide swiper_text animate-this">
+                                        <p class="swiper_text_title">杨荣添（Tim）</p>
+                                        <p class="swiper_text_cont" style="margin-top: 8px;">
+                                            毕业于奥克兰理工大学，金融硕士研究生。拥有多年海外投资、跨境电商全球渠道拓展及供应链金融从业经验，近年来专注于区块链技术解决新零售行业问题的研究和实践。
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide swiper_text animate-this">
+                                        <p class="swiper_text_title">蔡壮 （Max）</p>
+                                        <p class="swiper_text_cont" style="margin-top: 8px;">
+                                            中国云体系联盟常务理事，中国通信工业协会区块链专业委员会委员.对传统行业转型新零售领域有深入的研究，参与和投资了多个新零售相关项目。
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide swiper_text animate-this">
+                                        <p class="swiper_text_title">文沛（Tommy）</p>
+                                        <p class="swiper_text_cont" style="margin-top: 8px;">
+                                            计算机硕士，曾是世界500强科技企业大数据团队的资深工程师，在众多大数据项目中担任架构师/项目经理。
+                                            曾入选该企业区块链实验室并担任研究员，对分布式计算及区块链技术有深入的研究，也是全球大数据开源项目的积极贡献者。
+                                    </div>
+                                    <div class="swiper-slide swiper_text animate-this">
+                                        <p class="swiper_text_title" style="margin-top: 8px;">杨成武（Dufren）</p>
+                                        <p class="swiper_text_cont">
+                                            四川外语学院本硕双学位，精通英语，西班牙语2013年因翻译ETH白皮书结缘数字货币并投身其中，IOTA，BYTEBALL，NXT早期投资人。
+                                            曾参与多个区块链项目的顶层设计与实施。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!--顾问团队-->
+            <div class="swiper-slide main" style="">
+                <!--background: url('images/teamBg2.png') center center no-repeat;background-size: 100% auto-->
+                <div class="main_cont">
+                    <section class="team_zatGo z-index clearfix">
+                        <div class="team_bg1"></div>
+                        <!--<div class="team_bg2"></div>-->
+                        <div class="team_title">
+                            <h3 class="cont_title animate-this">顾问团队</h3>
+                            <span class="bottom_border border_color1 animate-this"></span>
+                        </div>
+
+                        <div class="team_cont row">
+                            <!--<div class="col-lg-3 col-md-3 col-sm-3">-->
+                                <!--<div class="cont_div">-->
+                                    <!--<img class="team_tx animate-this" src="images/Core-Team2.jpg" alt="">-->
+                                    <!--<h3 class="team_name animate-this">杨立（YangLi）</h3>-->
+                                    <!--<div class="introduce animate-this">-->
+                                        <!--<p class="introduce_cont">-->
+                                            <!--原DadxChain联合创始人，近8年的互联网从业经验，5年的金融行业数字营销从业经验，为包含中国银行、建设银行、兴业银行、中信银行等近十余家大型银行机构提供数字营销解决方案并担任新媒体营销顾问。-->
+                                        <!--</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" src="images/shen.jpg" style="border-radius: 50%" alt="">
+                                    <h3 class="team_name animate-this">沈寓实</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            国家“千人计划”特聘专家，中国云体系产业创新战略联盟秘书长，清华大学互联网产业研究院研究员。清华大学电子工程学士，美国加州大学圣迭戈分校电子计算机硕士和博士学，美国华盛顿大学工商管理学硕士。在ICT领域将近20年的科研、研发和管理经验，网络空间战略专家，云计算、大数据、网络安全、视频编解码和无线通信领域国际专家。                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" src="images/yangchao.png" alt="">
+                                    <h3 class="team_name animate-this">杨超</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            普华永道TeachLeader，Hyperlink Capital创始合伙人，区块链技术专家，区块链早期投资人。Neo社区开发者，Neblio代码贡献者，Neblio中国基金会发起人，IHT区块链专家顾问。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" src="images/Core-Team1.jpg" alt="">
+                                    <h3 class="team_name animate-this">唐敏(TangMin)</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            重庆工商大学副教授 硕士研究生导师
+                                            研究领域：电商数据挖掘，企业信息化，管理信息系统、数据分析与决策支持。曾主持参与国家社科基金项目，参与英国繁荣基金及世界银行资助等项目。
+                                            唐敏教授的加入将在大数据分析和新零售系统落地等方面助力BCAC的发展。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team_cont_phone">
+                            <div class="swiper-container team_swiper swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" src="images/shen.jpg" alt="">
+                                        <h3 class="team_name animate-this">沈寓实</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                国家“千人计划”特聘专家，中国云体系产业创新战略联盟秘书长，清华大学互联网产业研究院研究员。清华大学电子工程学士，美国加州大学圣迭戈分校电子计算机硕士和博士学，美国华盛顿大学工商管理学硕士。在ICT领域将近20年的科研、研发和管理经验，网络空间战略专家，云计算、大数据、网络安全、视频编解码和无线通信领域国际专家。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" src="images/yangchao.png" alt="">
+                                        <h3 class="team_name animate-this">杨超</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                普华永道TeachLeader，Hyperlink Capital创始合伙人，区块链技术专家，区块链早期投资人。Neo社区开发者，Neblio代码贡献者，Neblio中国基金会发起人，IHT区块链专家顾问。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" src="images/Core-Team1.jpg" alt="">
+                                        <h3 class="team_name animate-this">唐敏(TangMin)</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                重庆工商大学副教授 硕士研究生导师
+                                                研究领域：电商数据挖掘，企业信息化，管理信息系统、数据分析与决策支持。曾主持参与国家社科基金项目，参与英国繁荣基金及世界银行资助等项目。
+                                                唐敏教授的加入将在大数据分析和新零售系统落地等方面助力BCAC的发展。
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <!--<div class="swiper-slide team_silde">-->
+                                        <!--<img class="team_tx animate-this" src="images/Core-Team2.jpg" alt="">-->
+                                        <!--<h3 class="team_name animate-this">杨立（YangLi）</h3>-->
+                                        <!--<div class="introduce animate-this">-->
+                                            <!--<p class="introduce_cont">-->
+                                                <!--原DadxChain联合创始人，近8年的互联网从业经验，5年的金融行业数字营销从业经验，为包含中国银行、建设银行、兴业银行、中信银行等近十余家大型银行机构提供数字营销解决方案并担任新媒体营销顾问。-->
+                                            <!--</p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                </div>
+                                <div class="swiper-button-next team_swiper_next"></div>
+                                <div class="swiper-button-prev team_swiper_prev"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+<!--伙伴-->
+            <!--投资机构-->
+            <div class="swiper-slide main">
+                <div class="main_cont" id="partner1">
+                    <section class="team_zatGo z-index clearfix">
+                        <!--<div class="team_bg1"></div>-->
+                        <div class="team_bg2"></div>
+                        <div class="team_title">
+                            <h3 class="cont_title animate-this">投资机构</h3>
+                            <span class="bottom_border border_color1 animate-this"></span>
+                            <h5 class="little_title animate-this"></h5>
+                        </div>
+
+                        <div class="team_cont row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" src="images/logo/Crypto%20Capital.png" alt="">
+                                    <h3 class="team_name animate-this">Crypto Capital</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            加密资本是专注区块链领域的知名投资机构。依托强大的区块链领域资源优势及专业的投研团队，自16年起先后参与Cybermiles、
+                                            Abra、唯链、比原链Bytom等多个项目的投资。涉及矿场、钱包、交易所、区块链技术产业园等领域，着力于优质区块链技术项目的孵化，
+                                            布局完整的区块链生态系统。Crypto Capital加密资本立足于全球，团队核心投控成员均为金融、区块链、人工智能的行业翘楚。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" src="images/logo/cryptonord.png" alt="">
+                                    <h3 class="team_name animate-this">Cryptonord</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            欧洲著名区块链基石基金，已投资多个欧洲区块链项目，包括欧洲著名财团瓦伦堡家族旗下公司 Joors及joorsChain项目。
+                                            Cry作为基石基金参与了BCAChain的早期投资，为BCAC进入欧洲市场提供必要资源。                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team_cont_phone">
+                            <div class="swiper-container team_swiper swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" src="images/logo/Crypto%20Capital.png" alt="">
+                                        <h3 class="team_name animate-this">Crypto Capital</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                加密资本是专注区块链领域的知名投资机构。依托强大的区块链领域资源优势及专业的投研团队，自16年起先后参与Cybermiles、
+                                                Abra、唯链、比原链Bytom等多个项目的投资。涉及矿场、钱包、交易所、区块链技术产业园等领域，着力于优质区块链技术项目的孵化，
+                                                布局完整的区块链生态系统。Crypto Capital加密资本立足于全球，团队核心投控成员均为金融、区块链、人工智能的行业翘楚。                                          </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" src="images/logo/cryptonord.png" alt="">
+                                        <h3 class="team_name animate-this">Cryptonord</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                欧洲著名区块链基石基金，已投资多个欧洲区块链项目，包括欧洲著名财团瓦伦堡家族旗下公司 Joors及joorsChain项目。
+                                                Cry作为基石基金参与了BCAChain的早期投资，为BCAC进入欧洲市场提供必要资源。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next team_swiper_next"></div>
+                                <div class="swiper-button-prev team_swiper_prev"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+            <!--支持单位-->
+            <div class="swiper-slide main">
+                <div class="main_cont" id="">
+                    <section class="team_zatGo z-index clearfix">
+                        <!--<div class="team_bg1"></div>-->
+                        <div class="team_bg2"></div>
+                        <div class="team_title">
+                            <h3 class="cont_title animate-this">支持单位</h3>
+                            <span class="bottom_border border_color1 animate-this"></span>
+                            <h5 class="little_title animate-this"></h5>
+                        </div>
+                        <div class="team_cont row">
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" style="height: 5.5vw;max-height: 90px" src="images/logo/bcex.png" alt="">
+                                    <h3 class="team_name animate-this">BCEX</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            BCEX是全球领先的数字资产交易平台，致力于以最高的行业标准为全球用户带来最佳的交易体验。BCEX的模式是为客户带来具有可持续价值的项目，只有具有最高质量的项目才会被选择并提供交易服务。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" style="height: 5.5vw;max-height: 90px" src="images/logo/zbg3.png" alt="">
+                                    <h3 class="team_name animate-this">ZBG</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            ZBG交易平台是于2018年7月推出的全球顶尖社区化创新币种交易平台，并由ZB全资控股。ZBG平台首创POW+POS交易挖矿机制，致力于依托ZB.com的技术体系，打造一个全球范围内广泛互联的交易联盟。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" style="height: 5.5vw;max-height: 85px" src="images/logo/chinaCloud.png" alt="">
+                                    <h3 class="team_name animate-this" style="font-size: 17px;">中国云体系产业创新战略联盟</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            以云平台、云网络、云终端、云服务和云安全为五大主题的“云体系”，是新一代信息技术的变革核心，是我国首个以“云-网-端”体
+                                            系为核心理念的国家级联盟，也是中国网络强国战略、国家大数据战略、人工智能国家战略和“互联网 ”行动计划的重要支持单位。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" style="height: 5.5vw;max-height: 85px" src="images/logo/ccia.jpg" alt="">
+                                    <h3 class="team_name animate-this" style="font-size: 19px;">CCIA区块链专委会</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            中国通信工业协会区块链专业委员会（简称“CCIA区块链专委会”），隶属于中国通信工业协会，构建区块链产业集群，融组市场联合体，共筑产业应用新格局，努力实现国家区块链战略阶段性成果。委员会战略定位：中国区块链产业的引领者；战略愿景：链接价值  人人互信。战略使命：致力服务于国家区块链战略。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="col-lg-3 col-md-3 col-sm-3">-->
+                                <!--<div class="cont_div">-->
+                                    <!--<img class="team_tx animate-this" src="images/logo/swkj.png" alt="">-->
+                                    <!--<h3 class="team_name animate-this" style="font-size: 19px">思微股份</h3>-->
+                                    <!--<div class="introduce animate-this">-->
+                                        <!--<p class="introduce_cont">-->
+                                            <!--重庆思微科技股份有限公司,国家高新技术企业、双软认证企业，中国通讯工业协会区块链专业委员会单位，2017年8月挂牌重庆股权交易中心。-->
+                                        <!--</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </div>
+
+                        <div class="team_cont_phone">
+                            <div class="swiper-container team_swiper swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" style="border-radius: 0" src="images/logo/bcex.png" alt="">
+                                        <h3 class="team_name animate-this">BCEX</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                BCEX是全球领先的数字资产交易平台，致力于以最高的行业标准为全球用户带来最佳的交易体验。在BCEX不断努力改进安全特性，
+                                                以确保客户的数字资产安全。BCEX的模式是为客户带来具有可持续价值的项目，只有具有最高质量的项目才会被选择并提供交易服务。                                          </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" style="border-radius: 0"  src="images/logo/zbg_phone.png" alt="">
+                                        <h3 class="team_name animate-this">ZBG</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                ZBG交易平台是于2018年7月推出的全球顶尖社区化创新币种交易平台，并由ZB全资控股。ZB前身是2013年成立的中国比特币，未来ZB主站只支持TOP50主流币种交易，
+                                                而ZBG是支持更为丰富的优质创新币种的上币交易平台，类似创业板。ZBG平台首创POW+POS交易挖矿机制，致力于依托ZB.com的技术体系，打造一个全球范围内广泛互联的交易联盟。
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" style="border-radius: 0"  src="images/logo/chinaCloud.png" alt="">
+                                        <h3 class="team_name animate-this">中国云体系产业创新战略联盟</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                联盟于2013年11月13日在北京人民大会堂宣告成立，以云平台、云网络、云终端、云服务和云安全为五大主题的“云体系”，是新一代信息技术的变革核心，是我国首个以“云-网-端”体
+                                                系为核心理念的国家级联盟，也是中国网络强国战略、国家大数据战略、人工智能国家战略和“互联网 ”行动计划的重要支持单位。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" style="border-radius: 0"  src="images/logo/ccia.jpg" alt="">
+                                        <h3 class="team_name animate-this">CCIA区块链专委会</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                中国通信工业协会区块链专业委员会（简称“CCIA区块链专委会”），隶属于中国通信工业协会（中华人民共和国工业和信息化部主管），以中国区块链产业的引领者为战略定位，以链接价值，人人互信为战略愿景，以致力服务于国家区块链战略为战略使命，以秘书长单位为原点，以会员为多中心，构建区块链产业集群，融组市场联合体，共筑产业应用新格局，努力实现国家区块链战略阶段性成果。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--<div class="swiper-slide team_silde">-->
+                                        <!--<img class="team_tx animate-this" src="images/logo/swkj.png" alt="">-->
+                                        <!--<h3 class="team_name animate-this">思微股份</h3>-->
+                                        <!--<div class="introduce animate-this">-->
+                                            <!--<p class="introduce_cont">-->
+                                                <!--重庆思微科技股份有限公司, 国家高新技术企业、双软认证企业，中国通讯工业协会区块链专业委员会单位，2017年8月挂牌重庆股权交易中心。-->
+                                            <!--</p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                </div>
+                                <div class="swiper-button-next team_swiper_next"></div>
+                                <div class="swiper-button-prev team_swiper_prev"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+<!--钱包-->
+            <div class="swiper-slide main platform_main">
+                <div class="main_cont" id="wallet">
+                    <section class="road_map clearfix">
+                        <div class="road_title">
+                            <h3 class="cont_title animate-this">钱包</h3>
+                            <span class="bottom_border border_color2 animate-this"></span>
+                        </div>
+
+                        <div class="road_cont animate-this" style="text-align: center">
+                            <img src="images/mobile.png" width="100%" alt="ZatGo App">
+                            <div class="white_btn animate-this"  style="width: auto;display: inline-block;padding: 0 20px;">
+                                <a href="download/release/index.html" id="" target="_blank">下载BCAC&nbsp;&nbsp;钱包</a>
+                            </div>
+                        </div>
+
+
+                        <!--<div class="road_cont_phone" style="height: auto">-->
+                        <!---->
+                        <!--</div>-->
+
+                        <div class="road_cont_phone swiper-container swiper-container-vertical swiper-container-free-mode">
+                            <div class=" swiper-wrapper" style="transition-duration: 0ms;">
+                                <div class="swiper-slide road_phone_slide">
+                                    <img src="images/mobile.png" width="100%" alt="">
+                                </div>
+                                <div class="white_btn animate-this" style="margin:10px auto;">
+                                    <a href="download/release/index.html" id="down_btn" target="_blank">下载BCAC&nbsp;&nbsp;钱包</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+<!--联系我们-->
+            <div class="swiper-slide main">
+                <div class="swiper-slide main">
+                    <div class="main_cont" id="develop">
+                        <section class="develop_zatGo z-index clearfix">
+                        <div class="develop_nr z-index">
+                            <div class="cont_title animate-left opacity">动态</div>
+                            <div class="bottom_border border_color2 animate-this"></div>
+                            <div class="cont_text ">
+                                <p class="animate-right opacity"></p>
+                            </div>
+                        </div>
+
+                        <div class="develop_cont animate-this" style="margin: 0 auto">
+                            <div class="swiper-container develop_swiper swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-312.5px, 0px, 0px);">
+                                    <!--{list catid=1 order=listorder_desc,updatetime}-->
+                                    <div class="swiper-slide develop_silde swiper-slide-active" data-swiper-slide-index="0">
+                                        <div class="silde_cont" style="height: 200px">
+                                            <h3 class="develop_name" data-text="Wallet API" onclick='window.location.href="show_news.html"'>BCAC（商信链）每周项目进展通报（1.9-1.15）</h3>
+                                            <div class="introduce_cont" style="position: absolute;right: 47px;bottom: 25px">
+                                                2019-1-15
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--{/list}-->
+
+                                    <div class="swiper-slide develop_silde swiper-slide-active" data-swiper-slide-index="0">
+                                        <div class="silde_cont" style="height: 200px">
+                                            <h3 class="develop_name" data-text="Wallet API" onclick='window.location.href="show_news.html"'>新年行大运！【中奖名单】有你</h3>
+                                            <div class="introduce_cont" style="position: absolute;right: 47px;bottom: 25px">
+                                                2019-01-12
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide develop_silde swiper-slide-active" data-swiper-slide-index="0">
+                                        <div class="silde_cont" style="height: 200px">
+                                            <h3 class="develop_name" data-text="Wallet API" onclick='window.location.href="show_news.html"'>BCAC签约“豌豆树·博仁尚武"，助力传承中华武学文化精髓</h3>
+                                            <div class="introduce_cont" style="position: absolute;right: 47px;bottom: 25px">
+                                                2019-01-04
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide develop_silde swiper-slide-active" data-swiper-slide-index="0">
+                                        <div class="silde_cont" style="height: 200px">
+                                            <h3 class="develop_name" data-text="Wallet API" onclick='window.location.href="show_news.html"'>元旦活动炸裂来袭，就问你敢不敢来？</h3>
+                                            <div class="introduce_cont" style="position: absolute;right: 47px;bottom: 25px">
+                                                2018-12-29
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide develop_silde swiper-slide-active" data-swiper-slide-index="0">
+                                        <div class="silde_cont" style="height: 200px">
+                                            <h3 class="develop_name" data-text="Wallet API" onclick='window.location.href="show_news.html"'>公告|关于持币生息</h3>
+                                            <div class="introduce_cont" style="position: absolute;right: 47px;bottom: 25px">
+                                                2018-12-24
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                                <div class="swiper-pagination develop_pagination swiper-pagination-fraction">
+                                <span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">3</span>
+                                </div>
+                                <div class="swiper-button-next develop_swiper_next" style="top: 117px;"></div>
+                                <div class="swiper-button-prev develop_swiper_prev" style="top: 117px;"></div>
+                            </div>
+                            <div class="develop_bottom">
+                    <div class="develop_bottom_cont"></div>
+                    </div>
+                    </section>
+                    </div>
+                </div>
+
+                <footer class="footer" id="pc_footer">
+                    <div class="foot clearfix">
+                        <div class="foot_logo animate-this">
+                            <img src="images/logo2.png" alt="logo">
+                        </div>
+                        <div class="foot_logo_phone animate-this">
+                            <img src="images/mobile-Logo.png" width="100%" alt="logo">
+                        </div>
+                        <div class="foot_list">
+                            <ul class="row">
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">联系我们</div>
+                                    <div class="list_cont animate-this">网站：www.bcachain.org</div>
+                                    <div class="list_cont animate-this">微信：bcac0001</div>
+                                </li>
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">微信公众号</div>
+                                    <div class="list_cont animate-this">
+                                        <img src="images/gongzhonghao.jpg" alt="" style="width: 120px">
+                                    </div>
+                                </li>
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">首席客服微信</div>
+                                    <div class="list_cont animate-this">
+                                        <img src="images/service.png" alt="" style="width: 120px">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot_text animate-this">© Copyright 2018. All Rights Reserved.</div>
+                </footer>
+            </div>
+
+            <div class="swiper-slide main" id="phone_footer">
+                <footer class="footer">
+                    <div class="foot clearfix">
+                        <div class="foot_logo animate-this">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                        <div class="foot_logo_phone animate-this">
+                            <img src="images/mobile-Logo.png" width="100%" alt="logo">
+                        </div>
+                        <div class="foot_list">
+                            <ul class="row">
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">联系我们</div>
+                                    <div class="list_cont animate-this">网站：www.bcachain.org</div>
+                                    <div class="list_cont animate-this">微信：bcac0001</div>
+                                </li>
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">微信公众号</div>
+                                    <!--<div class="list_cont animate-this">Telegram：ZatGo承云</div>-->
+                                    <!--<div class="list_cont animate-this">BeeChat：ZatGo官方群</div>-->
+                                    <!--<div class="list_cont animate-this">Twitter：ZatGo_official</div>-->
+                                    <div class="list_cont animate-this">
+                                        <img src="images/gongzhonghao.jpg" alt="" style="width: 120px">
+                                    </div>
+                                </li>
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">首席客服微信</div>
+                                    <!--<div class="list_cont animate-this">Reply”WhitePaper”to WeChat public-->
+                                        <!--account to download QR code.</div>-->
+                                    <!--<div class="list_cont animate-this">Wechat subscription: gobyzat</div>-->
+                                    <div class="list_cont animate-this">
+                                        <img src="images/service.png" alt="" style="width: 120px">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot_text animate-this">Copyright ⓒ All Rights Reserved by BCAC</div>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.1.6.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+    $(function () {
+        var mainSwiper = new Swiper('#main_swiper',{
+            direction: 'vertical',
+            speed:800,
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.3,//触屏比率...
+            mousewheel: true,
+            height : window.innerHeight,
+            on:{
+                init:function(swiper){
+                    slide=this.slides.eq(0);
+                    slide.addClass('ani-slide');
+                },
+                transitionStart: function(){
+                    for(i=0;i<this.slides.length;i++){
+                        slide=this.slides.eq(i);
+                        slide.removeClass('ani-slide');
+                    }
+                },
+                transitionEnd: function(){
+                    slide=this.slides.eq(this.activeIndex);
+                    slide.addClass('ani-slide');
+                    if(this.activeIndex>=1){
+                        $(".go_up").show();
+                    }else {
+                        $(".go_up").hide();
+                    }
+                    var width = $("body").width();
+                    if(this.activeIndex<this.slides.length-1&&width<=767){
+                        $('.go_next').show();
+                    }else {
+                        $('.go_next').hide();
+                    }
+                    if(this.activeIndex==11){
+                        $(".phone_logo img").attr("src","images/logo2.png")
+                    }else {
+                        $(".phone_logo img").attr("src","images/logo.png")
+                    }
+                }
+            }
+        });
+
+        $('.go_next').click(function(){
+            mainSwiper.slideNext();
+        })
+
+        $('.swiper_list1,.go_up').click(function(){
+            mainSwiper.slideTo(0, 1000, false);
+        })
+        $('.swiper_list2').click(function(){
+            mainSwiper.slideTo(1, 1000, false);
+        })
+        $('.swiper_list3').click(function(){
+            mainSwiper.slideTo(2, 1000, false);
+        })
+        $('.swiper_list4').click(function(){
+            mainSwiper.slideTo(3, 1000, false);
+        })
+        $('.swiper_list5').click(function(){
+            mainSwiper.slideTo(4, 1000, false);
+        })
+
+        $('.swiper_list6').click(function(){
+            mainSwiper.slideTo(5, 1000, false);
+        })
+
+        $('.swiper_list7').click(function(){
+            mainSwiper.slideTo(7, 1000, false);
+        })
+        $('.swiper_list8').click(function(){
+            mainSwiper.slideTo(9, 1000, false);
+        })
+        $('.swiper_list9').click(function(){
+            mainSwiper.slideTo(10, 1000, false);
+        })
+
+
+        var OperationText = new Swiper('.operation_text', {
+            initialSlide :1,
+            // spaceBetween: 10,//slide之间的距离（单位px）。
+        });
+        var OperationImg = new Swiper('.operation_img', {
+            initialSlide :1,
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true,//设置为true则点击slide时会在这个slide产生过渡。..
+        });
+        OperationImg.controller.control = OperationText;
+        OperationText.controller.control = OperationImg;
+
+        var team_swiper = new Swiper('.team_swiper', {
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true,//设置为true则点击slide时会在这个slide产生过渡。..
+            navigation: {
+                nextEl: '.team_swiper_next',
+                prevEl: '.team_swiper_prev',
+            }
+        });
+
+        var develop_swiper = new Swiper('.develop_swiper', {
+            centeredSlides: false,//若为真，那么活动块会居中，而非默认状态下的居左...
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            // centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction'
+            },
+            navigation: {
+                nextEl: '.develop_swiper_next',
+                prevEl: '.develop_swiper_prev',
+            },
+            loop:true,
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true,//设置为true则点击slide时会在这个slide产生过渡。..
+        });
+
+        var road_cont_phone = new Swiper('.road_cont_phone', {
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            freeMode: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            mousewheel: true
+        });
+
+
+        /* 视频播放 */
+//        var myPlayer = videojs('my-video');
+//        $("#video-click").click(function () {
+//            $(".video_popup").show();
+//            myPlayer.play();
+//        });
+//
+//        $(".video_close").click(function () {
+//            $(".video_popup").hide();
+//            myPlayer.pause();
+//        })
+
+
+    })
+
+
+
+
+</script>
+
+</body>
+</html>

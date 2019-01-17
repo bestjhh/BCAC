@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .my-video-dimensions {
+            width: 1920px;
+            height: 1080px;
+        }
+        .my-video-dimensions.vjs-fluid {
+            padding-top: 56.25%;
+        }
+    </style>
+    <style>
+        .news-detail-content p img{
+            margin-bottom: 10px!important;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BCAChain</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/swiper-4.1.6.min.css" rel="stylesheet">
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="css/windows10/windows10.css" rel="stylesheet">
+    <link href="css/index.css?v=4" rel="stylesheet">
+    <link href="css/new.css" rel="stylesheet">
+    <link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+    <!--加载-->
+    <link href="css/pace-theme-barber-shop.css" rel="stylesheet">
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery.1.11.min.js"></script>
+    <script>
+        /* 设置html */
+        window.onload = function(){
+            changeWidth();
+            window.onresize = function(){
+                changeWidth();
+            };
+            function changeWidth(){
+                var width = $(window).width();
+                $("html").css("font-size",width/30+"px");
+            }
+        };
+    </script>
+</head>
+<body class="pace-done" style="-webkit-overflow-scrolling: touch">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+    <div class="pace-progress-inner"></div>
+</div>
+    <div class="pace-activity"></div></div>
+<!-- 100% 超出部分隐藏 -->
+<div class="wrapper">
+    <!--中文导航-->
+    <div class="culmn chineseNav">
+        <!-- 导航 -->
+        <nav class="nav" id="nav" style="background: white">
+            <div class="container clearfix">
+                <div class="nav-logo">
+                    <img src="images/logo.png" height="80%">
+                </div>
+                <div class="navbar-collapse" id="nav-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/" class="swiper_list1">首页</a></li>
+                        <li><a href="https://github.com/BusinessCredit" class="">GitHub</a></li>
+                        <li><a href="/" class="swiper_list2">白皮书</a></li>
+                        <!--<li><a href="/" class="swiper_list3">关于BCAC</a></li>-->
+                        <!--<li><a href="/" class="swiper_list4">项目</a></li>-->
+                        <!--<li><a href="/" class="swiper_list5">路线图</a></li>-->
+                        <li><a href="/" class="smoothscroll swiper_list6" title="">团队</a></li>
+                        <li><a href="file/BCAC%20Foundation.pdf" class="smoothscroll swiper_list6" title="">资质</a></li>
+                        <!--<li><a href="/" class="swiper_list7">伙伴</a></li>-->
+                        <!--<li><a href="/" class="swiper_list8">钱包</a></li>-->
+                        <li><a href="javascript:;" class="swiper_list8">产品</a></li>
+                        <li><a href="/" class="swiper_list9">动态</a></li>
+                        <li><a href="/" class="swiper_list9">联系我们</a></li>
+                        <li><a href="index_en.html" >中文/EN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 手机导航 -->
+        <div class="nav_phone" id="nav_phone">
+            <a id="header-menu-trigger" href="##">
+                <span class="header-menu-icon"></span>
+            </a>
+            <div class="phone_logo">
+                <img src="images/logo.png" width="100%" alt="logo">
+            </div>
+        </div>
+        <nav id="menu-nav-wrap">
+            <a href="#0" class="close-button" title="close"><span>Close</span></a>
+            <h3>BCAC</h3>
+            <ul class="nav-list">
+                <li class="current"><a class="smoothscroll swiper_list1" href="/" title="">首页</a></li>
+                <li><a class="smoothscroll" href="https://github.com/BusinessCredit" title="">GitHub</a></li>
+                <li><a class="smoothscroll swiper_list2" href="/" title="">白皮书</a></li>
+                <!--<li><a class="smoothscroll swiper_list3" href="/" title="">关于BCAC</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list4" href="/" title="">项目</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list5" href="/" title="">路线图</a></li>-->
+                <li><a class="smoothscroll swiper_list6" href="/" title="">团队</a></li>
+                <li><a class="smoothscroll swiper_list6" href="file/BCAC%20Foundation.pdf" title="">资质</a></li>
+                <!--<li><a class="smoothscroll swiper_list7" href="/" title="">伙伴</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list8" href="/" title="">钱包</a></li>-->
+                <li><a class="smoothscroll swiper_list8" href="javascript:;" title="">产品</a></li>
+                <li><a class="smoothscroll swiper_list9" href="/" title="">动态</a></li>
+                <li><a class="smoothscroll swiper_list9" href="/" title="">联系我们</a></li>
+                <li><a class="smoothscroll" href="index_en.html" title="">中文/EN</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--返回首页按钮-->
+    <!--<div class="go_up" style="display: block;">-->
+        <!--<i class="icon-UpArrow"></i>-->
+    <!--</div>-->
+
+    <!--新闻内容-->
+    <div class="news_container_detail" style="width: 65%;margin: 0 auto">
+        <div class="container-app-content">
+            <div class="news-detail-container">
+                <div class="news-detail">
+                    <div class="news-detail-title">元旦活动炸裂来袭，就问你敢不敢来？</div>
+                    <div style="height: 5px;width:100%;background: linear-gradient(to bottom, rgba(32, 89, 138, 0.2),rgba(32, 89, 138, 0.06));border-radius: 50%;margin: -20px auto 20px"></div>
+                    <div class="news-detail-timestamp">2018-12-29</div>
+                    <div class="news-detail-content">
+                        <p>一、<strong>活动时间：</strong></p>
+                        <p>2019年1月1日00：00——2019年1月3日24：00</p>
+                        <p>二、<strong>活动规则：</strong></p>
+                        <p>1、在BCEX交易所<span style="color:#ff0000"><strong>当日购买累计或单笔达</strong></span>5000个或5000个以上BCAC<br>
+                            2、达到当日购买满5000个或以上BCAC，按当日购买时间排名，前一百名均获得30元京东购物卡</p>
+                        <p><span style="font-size:1.000em"><strong>三、信息提交：</strong></span></p>
+                        <p><span style="font-size:1.000em">完成交易后按下图形式将交易单截图并保存，并按要求上传，</span></p>
+                        <p><strong>注：每次购买上传单张截图，每天可多次购买、上传</strong></p>
+                        <p><span style="font-size:1.000em">
+                            <span tabindex="-1" contenteditable="false" data-cke-widget-wrapper="1" data-cke-filter="off" class="cke_widget_wrapper cke_widget_inline cke_image_nocaption cke_widget_selected" data-cke-display-name="img" data-cke-widget-id="1">
+                                <img alt="" height="169" data-cke-saved-src="https://pub-files.jinshuju.net/di/20181226151050_d936ec" src="images/20181226151050_d936ec" width="200" data-cke-widget-data="%7B%22hasCaption%22%3Afalse%2C%22src%22%3A%22https%3A%2F%2Fpub-files.jinshuju.net%2Fdi%2F20181226151050_d936ec%22%2C%22alt%22%3A%22%22%2C%22width%22%3A%22200%22%2C%22height%22%3A%22169%22%2C%22lock%22%3Atrue%2C%22align%22%3A%22none%22%2C%22classes%22%3Anull%7D" data-cke-widget-upcasted="1" data-cke-widget-keep-attr="0" data-widget="image" class="cke_widget_element">
+                                <span class="cke_reset cke_widget_drag_handler_container" style="background: url('images/handle.png') rgba(220, 220, 220, 0.5); top: -15px; left: 0; display: block;"></span>
+                                <span class="cke_image_resizer" title="undefined"></span></span></span></p>
+                        <p><span style="font-size:1.000em"><strong>四、奖品发放：</strong></span></p>
+                        <p><span style="font-size:1.000em">活动结束后经审核提交信息属实将在1月12日通过公众号发布获奖情况</span></p>
+                        <p><strong>五、操作过程中有疑问可与BCAC首席客服联系；</strong></p>
+                        <p><span style="font-size:1.000em"><span tabindex="-1" contenteditable="false" data-cke-widget-wrapper="1" data-cke-filter="off" class="cke_widget_wrapper cke_widget_inline cke_image_nocaption cke_widget_selected" data-cke-display-name="img" data-cke-widget-id="0">
+                            <img alt="" height="172" data-cke-saved-src="https://pub-files.jinshuju.net/di/20181029111917_09dfea" src="images/20181029111917_09dfea" width="148" data-cke-widget-data="%7B%22hasCaption%22%3Afalse%2C%22src%22%3A%22https%3A%2F%2Fpub-files.jinshuju.net%2Fdi%2F20181029111917_09dfea%22%2C%22alt%22%3A%22%22%2C%22width%22%3A%22148%22%2C%22height%22%3A%22172%22%2C%22lock%22%3Atrue%2C%22align%22%3A%22none%22%2C%22classes%22%3Anull%7D" data-cke-widget-upcasted="1" data-cke-widget-keep-attr="0" data-widget="image" class="cke_widget_element">
+                            <span class="cke_reset cke_widget_drag_handler_container" style="background:rgba(220,220,220,0.5);background-image:url(images/handle.png)"></span>
+                            <span class="cke_image_resizer" title="undefined"></span></span></span></p>
+                        <p>
+                            <img src="images/1546073857963172.png" title="1546073857963172.png" alt="元旦海报~.png"></p>
+                        <p><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer" id="pc_footer" style="position: relative">
+        <div class="foot clearfix">
+            <div class="foot_logo">
+                <img src="images/logo2.png" alt="logo">
+            </div>
+            <div class="foot_logo_phone">
+                <img src="images/mobile-Logo.png" width="100%" alt="logo">
+            </div>
+            <div class="foot_list">
+                <ul class="row">
+                    <li class="col-lg-4 col-md-4">
+                        <div class="list_title">联系我们</div>
+                        <div class="list_cont">网站：www.bcachain.org</div>
+                        <div class="list_cont">微信：bcac0001</div>
+                    </li>
+                    <li class="col-lg-4 col-md-4">
+                        <div class="list_title">微信公众号</div>
+                        <div class="list_cont">
+                            <img src="images/gongzhonghao.jpg" alt="" style="width: 120px">
+                        </div>
+                    </li>
+                    <li class="col-lg-4 col-md-4">
+                        <div class="list_title">首席客服微信</div>
+                        <div class="list_cont">
+                            <img src="images/service.png" alt="" style="width: 120px">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot_text">© Copyright 2018. All Rights Reserved.</div>
+    </footer>
+    <div class="swiper-slide main" id="phone_footer" style="position: relative">
+        <footer class="footer">
+            <div class="foot clearfix">
+                <div class="foot_logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="foot_logo_phone">
+                    <img src="images/mobile-Logo.png" width="100%" alt="logo">
+                </div>
+                <div style="float: left; width: 80%;padding-left: 7.6%;">
+                    <ul>
+                        <li>
+                            <div style="color: #fff;font-size: 20px;font-weight: bold;line-height: 40px">联系我们</div>
+                            <div class="list_cont" style="color: white;font-size: 13px;line-height: 20px">网站：www.bcachain.org</div>
+                            <div class="list_cont" style="color: white;font-size: 13px;line-height: 20px">微信：bcac0001</div>
+                        </li>
+                        <li style="margin-top: 20px;">
+                            <div class="list_title" style="color: #fff;font-size: 20px;font-weight: bold;line-height: 50px">微信公众号</div>
+                            <div class="list_cont">
+                                <img src="images/gongzhonghao.jpg" alt="" style="width: 120px">
+                            </div>
+                        </li>
+                        <li style="margin-top: 20px;">
+                            <div class="list_title" style="color: #fff;font-size: 20px;font-weight: bold;line-height: 50px">首席客服微信</div>
+                            <div class="list_cont">
+                                <img src="images/service.png" alt="" style="width: 120px">
+                            </div>
+                        </li>
+                    </ul>
+                    <div style="color: white;font-size: 11px;margin-top: 20px">Copyright ⓒ All Rights Reserved by BCAC</div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.1.6.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(function () {
+        var mainSwiper = new Swiper('#main_swiper',{
+            direction: 'vertical',
+            speed:800,
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.3,//触屏比率...
+            mousewheel: true,
+            height : window.innerHeight,
+            on:{
+                init:function(swiper){
+                    slide=this.slides.eq(0);
+                    slide.addClass('ani-slide');
+                },
+                transitionStart: function(){
+                    for(i=0;i<this.slides.length;i++){
+                        slide=this.slides.eq(i);
+                        slide.removeClass('ani-slide');
+                    }
+                },
+                transitionEnd: function(){
+                    slide=this.slides.eq(this.activeIndex);
+                    slide.addClass('ani-slide');
+                    if(this.activeIndex>=1){
+                        $(".go_up").show();
+                    }else {
+                        $(".go_up").hide();
+                    }
+                    var width = $("body").width();
+                    if(this.activeIndex<this.slides.length-1&&width<=767){
+                        $('.go_next').show();
+                    }else {
+                        $('.go_next').hide();
+                    }
+                    if(this.activeIndex==11){
+                        $(".phone_logo img").attr("src","images/logo2.png")
+                    }else {
+                        $(".phone_logo img").attr("src","images/logo.png")
+                    }
+                }
+            }
+        });
+        var OperationText = new Swiper('.operation_text', {
+            initialSlide :1
+            // spaceBetween: 10,//slide之间的距离（单位px）。
+        });
+        var OperationImg = new Swiper('.operation_img', {
+            initialSlide :1,
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true//设置为true则点击slide时会在这个slide产生过渡。..
+        });
+        OperationImg.controller.control = OperationText;
+        OperationText.controller.control = OperationImg;
+        var team_swiper = new Swiper('.team_swiper', {
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true,//设置为true则点击slide时会在这个slide产生过渡。..
+            navigation: {
+                nextEl: '.team_swiper_next',
+                prevEl: '.team_swiper_prev'
+            }
+        });
+
+        var develop_swiper = new Swiper('.develop_swiper', {
+            centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            // centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction'
+            },
+            navigation: {
+                nextEl: '.develop_swiper_next',
+                prevEl: '.develop_swiper_prev'
+            },
+            loop:true,
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true//设置为true则点击slide时会在这个slide产生过渡。..
+        });
+
+        var road_cont_phone = new Swiper('.road_cont_phone', {
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            freeMode: true,
+            scrollbar: {
+                el: '.swiper-scrollbar'
+            },
+            mousewheel: true
+        });
+    })
+</script>
+<script>
+    //获取参数
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+//    if(getQueryString("e")=="1"){
+//        $(".englishNav,.englishFooter").show();
+//        $(".chineseNav,.chineseFooter").hide();
+//    }
+</script>
+</body>
+</html>

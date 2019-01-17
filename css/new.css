@@ -1,0 +1,255 @@
+.news-detail{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.news-detail-title{
+    color: #20598a;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 30px;
+}
+.news-detail-timestamp {
+    text-align: right;
+    font-size: 12px;
+    color: #456c99;
+}
+.news-detail-content {
+    margin-top: 15px;
+    line-height: 25px;
+    font-size: 14px;
+}
+.news-detail-content p {
+    text-indent: 2em;
+}
+.news-detail-content p img{
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+.container-app-footer, .container-app-footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    display: flex;
+    align-items: center;
+}
+.container-app-footer {
+    width: 100%;
+    height: auto;
+    padding: 50px 0 0;
+    background-color: #20598a;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.container-app-footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-bottom: 1px solid hsla(0, 0%, 98%, .2);
+    font-size: 0;
+    padding-bottom: 50px;
+}
+.container-app-footer-copyright {
+    width: 100%;
+    padding-bottom: 0;
+}
+.container-app-footer-links {
+    width: auto;
+    height: auto;
+    padding-right: 20px;
+}
+.container-app-footer-down {
+    width: auto;
+    height: auto;
+    padding-left: 20px;
+    position: relative;
+}
+.container-app-footer-title {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+.container-app-footer-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 400px;
+    margin-top: 50px;
+    height: 80px;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.container-app-footer-links ul li .wechat {
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon/bcac_index_wechat.png);
+    background-size: 100% 100%;
+}
+.container-app-footer-links ul li .wechatImg {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: absolute;
+    background: url(../images/icon/img_wechatImg.png);
+    background-size: 100% 100%;
+    top: 70px;
+    left: -12px;
+    z-index: 999;
+}
+.container-app-footer-links ul li .twitt {
+    width: 50px;
+    height: 50px;
+    background: url(../images/icon/bcac_index_Twitter.png);
+    background-size: 100% 100%;
+}
+.container-app-footer-links ul li .telegram {
+    width: 50px;
+    height: 50px;
+    background: url(../images/icon/bcac_index_email.png);
+    background-size: 100% 100%;
+}
+.container-app-footer-links ul li .facebook {
+    width: 50px;
+    height: 50px;
+    background: url(../images/icon/bcac_index_facebook.png);
+    background-size: 100% 100%;
+}
+em, i, span {
+    display: inline-block;
+}
+.container-app-footer-links ul li {
+    width: 60px;
+    height: 60px;
+    /*background: #fff;*/
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.container-app-footer-title {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+.container-app-footer-down ul li a {
+    display: inline-block;
+}
+.container-app-footer-down ul li .android {
+    display: inline-block;
+    width: 130px;
+    height: 36px;
+    opacity: 0.6;
+    background: url(../images/icon/bcac_footer_android.png);
+    background-size: 100% 100%;
+}
+.container-app-footer-down ul li a .down_code {
+    width: 80px;
+    height: 80px;
+    display: none;
+    position: absolute;
+    background: url(../images/icon/icon_bcac_code.png);
+    background-size: 100% 100%;
+    top: 50px;
+    left: 25px;
+    z-index: 999;
+}
+.container-app-footer-down ul li .ios {
+    display: inline-block;
+    width: 130px;
+    height: 36px;
+    opacity: 0.6;
+    background: url(../images/icon/bcac_footer_ios.png);
+    background-size: 100% 100%;
+}
+.container-app-footer-down ul li a .down_code {
+    width: 80px;
+    height: 80px;
+    display: none;
+    position: absolute;
+    background: url(../images/icon/icon_bcac_code.png);
+    background-size: 100% 100%;
+    top: 50px;
+    left: 25px;
+    z-index: 999;
+}
+.container-app-footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-bottom: 1px solid hsla(0, 0%, 98%, .2);
+    font-size: 0;
+    padding-bottom: 50px;
+}
+.container-app-footer-copyright div {
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    line-height: 60px;
+}
+.container-app-footer-down ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 400px;
+    margin-top: 50px;
+    height: 80px;
+    justify-content: space-around;
+}
+li, ol, ul {
+    list-style: none;
+}

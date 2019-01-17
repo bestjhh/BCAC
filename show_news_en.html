@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .my-video-dimensions {
+            width: 1920px;
+            height: 1080px;
+        }
+        .my-video-dimensions.vjs-fluid {
+            padding-top: 56.25%;
+        }
+    </style>
+    <style>
+        .news-detail-content p img{
+            margin-bottom: 10px!important;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BCAChain</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/swiper-4.1.6.min.css" rel="stylesheet">
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="css/windows10/windows10.css" rel="stylesheet">
+    <link href="css/index.css?v=4" rel="stylesheet">
+    <link href="css/new.css" rel="stylesheet">
+    <link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+    <!--加载-->
+    <link href="css/pace-theme-barber-shop.css" rel="stylesheet">
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery.1.11.min.js"></script>
+    <script>
+        /* 设置html */
+        window.onload = function(){
+            changeWidth();
+            window.onresize = function(){
+                changeWidth();
+            };
+            function changeWidth(){
+                var width =  $(window).width();
+                $("html").css("font-size",width/30+"px");
+            }
+        };
+    </script>
+</head>
+<body class="pace-done" style="-webkit-overflow-scrolling: touch">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+    <div class="pace-progress-inner"></div>
+</div>
+    <div class="pace-activity"></div></div>
+<!-- 100% 超出部分隐藏 -->
+<div class="wrapper">
+    <!--英文导航-->
+    <div class="culmn englishNav">
+        <!-- 导航 -->
+        <nav class="nav" id="nav" style="background: white">
+            <div class="container clearfix">
+                <div class="nav-logo">
+                    <img src="images/logo.png" height="80%">
+                </div>
+                <div class="navbar-collapse" id="nav-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/" class="swiper_list1">Home</a></li>
+                        <li><a href="https://github.com/BusinessCredit" class="swiper_list1">GitHub</a></li>
+                        <li><a href="/" class="swiper_list2">White Paper</a></li>
+                        <!--<li><a href="/" class="swiper_list3">About</a></li>-->
+                        <!--<li><a href="/" class="swiper_list4">Product</a></li>-->
+                        <!--<li><a href="/" class="swiper_list5">RoadMap</a></li>-->
+                        <li><a href="/" class="smoothscroll swiper_list6" title="">Team</a></li>
+                        <li><a href="/" class="smoothscroll swiper_list6" title="">Aptitude</a></li>
+                        <!--<li><a href="/" class="swiper_list7">Partner</a></li>-->
+                        <!--<li><a href="/" class="swiper_list8">Wallet</a></li>-->
+                        <li><a href="/" class="swiper_list8">Product</a></li>
+                        <li><a href="/" class="swiper_list9">News</a></li>
+                        <li><a href="/" class="swiper_list9">Contact</a></li>
+                        <li><a href="index.html" >EN/中文</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 手机导航 -->
+        <div class="nav_phone" id="nav_phone">
+            <a id="header-menu-trigger" href="##">
+                <span class="header-menu-icon"></span>
+            </a>
+            <div class="phone_logo">
+                <img src="images/logo.png" width="100%" alt="logo">
+            </div>
+        </div>
+        <nav id="menu-nav-wrap">
+            <a href="#0" class="close-button" title="close"><span>Close</span></a>
+            <h3>BCAC</h3>
+            <ul class="nav-list">
+                <li class="current"><a class="smoothscroll swiper_list1" href="/" title="">Home</a></li>
+                <li class="current"><a class="smoothscroll" href="https://github.com/BusinessCredit" title="">Home</a></li>
+                <li><a class="smoothscroll swiper_list2" href="/" title="">White Paper</a></li>
+                <!--<li><a class="smoothscroll swiper_list3" href="/" title="">About</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list4" href="/" title="">Product</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list5" href="/" title="">RoadMap</a></li>-->
+                <li><a class="smoothscroll swiper_list6" href="/" title="">Team</a></li>
+                <li><a class="smoothscroll swiper_list6" href="/" title="">Aptitude</a></li>
+                <!--<li><a class="smoothscroll swiper_list7" href="/" title="">Partner</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list8" href="/" title="">Wallet</a></li>-->
+                <li><a class="smoothscroll swiper_list8" href="/" title="">Product</a></li>
+                <li><a class="smoothscroll swiper_list9" href="/" title="">News</a></li>
+                <li><a class="smoothscroll swiper_list9" href="/" title="">Contact</a></li>
+                <li><a class="smoothscroll" href="index.html" title="">EN/中文</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--返回首页按钮-->
+    <!--<div class="go_up" style="display: block;">-->
+        <!--<i class="icon-UpArrow"></i>-->
+    <!--</div>-->
+    <!--新闻内容-->
+    <div class="news_container_detail" style="width: 65%;margin: 0 auto">
+        <div class="container-app-content">
+            <div class="news-detail-container">
+                <div class="news-detail">
+                    <div class="news-detail-title">Introduction to Internet of Things RFID by BCAChain</div>
+                    <div style="height: 5px;width:100%;background: linear-gradient(to bottom, rgba(32, 89, 138, 0.2),rgba(32, 89, 138, 0.06));border-radius: 50%;margin: -20px auto 20px"></div>
+                    <div class="news-detail-timestamp">2018-09-01</div>
+                    <div class="news-detail-content">
+                        <p style="text-align: center;">Introduction</p>
+                        <p style="text-align: center;">Internet of Things cannot leave a network, but it is not only a network; it is indispensable to<br>sensors, antenna, radio-frequency circuit, cryptography technology, etc. On the basis of internet,<br>Internet ofthings adds RFID andsensor technology at theterminal. RFID system is widely used in<br>the Internet of things system due to high-speed mobile object recognition, multiple target<br>recognition, being susceptible to environmental pollution, strong penetrating power and<br>non-contact recognition, etc. Internet of Things uses RFID technology with the aid of widely<br>distributed sensor and information collector to collect information; through big data processing<br>system, the item properties are summarized, classified and integrated. Then, the relevant<br>information is transferred to the users to realize the purpose of various things connected. RFID<br>technology covers a wide range of subjects, including antenna technology, radio frequency circuit<br>andcomputertechnology.<br>(picture)</p>
+                        <p><br></p>
+                        <p style="text-align: center;">RFID technology</p>
+                        <p style="text-align: center;">According to the alignment of information transmission, Internet of things can be divided into<br>three layers: perception layer, network layer and application layer [2]. Perception layer includes<br>data collection and information transmission. Network layer is responsible for the perceived data<br>transmitted tothe application layer through the network. Perception layer includes various sensors,<br>infrared identification equipment, laser identification equipment, and RFID equipment that can<br>perceiving induction temperature, humidity, lighting and other indexes. Information perception<br>provides information source, which is the foundation of the Internet of things application.<br>Information perception is data collection.As the key technology of perception layer for internet of<br>things,RFID takescharge ofinformationcollectionandtransmission.</p>
+                        <p><br></p>
+                        <p style="text-align: center;">RFID system generallyconsistsofelectronictag, readerandbackgroundDatabaseServer [2].</p>
+                        <p><br></p>
+                        <p style="text-align: center;">Classificationoftag</p>
+                        <p style="text-align: center;">Electronic tag as a transponder is composed of antenna, coupling components, chip, voltage<br>regulator,logic control circuit, electrically erasable programmable read only memory, etc.There is<br>onlyIDserial numberintheworld,andtheprivacy informationrelatedtothetarget inthechip.</p>
+                        <p><br></p>
+                        <p style="text-align: center;">WorkprincipleofRFID</p>
+                        <p style="text-align: center;">Reader is the device to read electronic tag information by the use of RFID, composed of antenna,<br>reading and writing module and data processing module. Reader sends instruction to the tag<br>mainly through antenna, and the exchange of information is realized through half duplex mode<br>and tag. Reader is divided into portable and stationary ones [5].The frequency band, identification<br>scope, application situation of RFID system is determined by the work frequency, transmission<br>power and size of reader, so the performance of the reader plays an important role in the RFID<br>system [6]. The information transfer of reader with the electronic tag generally has two processes<br>inthefollowing [6]:</p>
+                        <p style="text-align: center;">(1)Establishresponsemechanism<br>(2)Transmissionandreceptionofsignals</p>
+                        <p><br></p>
+                        <p style="text-align: center;">Generallyspeaking,theworkprincipleofRFID followsthefollowingtwoways [6]:</p>
+                        <p style="text-align: center;">(1)Inductivecoupling<br>(2) ElectromagneticBackscatter Coupling</p>
+                        <p><br></p>
+                        <p style="text-align: center;">WorkingfrequencyofRFID</p>
+                        <p style="text-align: center;">The application frequency band of RFID products [7] includes short-range RFID system with low<br>frequency (LF, 125-134khz) and high frequency (HF, 13.56mhz), which works through the reader<br>antenna and label antenna as well as relies on the inductive coupling of magnetic field. Ultrahigh<br>frequency(UHF,433MHz, 840-960mhz) and microwave (2.45 and 5.8ghz) belong to remote RFID<br>system that relies on electromagnetic waves emitted by reader antennas and label antennas for<br>long-distancecommunication.</p>
+                        <p><br></p>
+                        <p style="text-align: center;">Transmission distance of low-frequency RFID is short, with low transfer rate; it can penetrate<br>water but cannot penetrate the metal; the probe radius is less than 0.5 meters; the information<br>transmission amount is less than 1000 bits persecond, commonly usedin animal identification[4].<br>High-frequency RFID has long transmission distance, high data transfer rate, and can penetrate<br>water, but cannot penetrate the metal; the transmission distance is farther, with very high data<br>transfer rate. It can read more than 100 tags at the same time, but can’t penetrate water and metal.<br>the frequency range is from 433 to 956 MHZ of uhf tags; the detection range is up to 100 meters,<br>generally used in the logistics industry. For the tag of 2.45GHZ microwave frequency band, its<br>detection distance is 10m, which is commonly used in vehicle charging system. RFID at 5.8 GHZ<br>has incomparable advantages in reading distance and data transmission rate, but it cannot<br>penetratewaterandmetal.</p>
+                        <p><br></p>
+                        <p style="text-align: center;">AdvantagesofRFID system</p>
+                        <p style="text-align: center;">RFID does not need source or artificial participation in operation. It can adapt to different work<br>environment with long service life and can be embedded on different objects. Its communication<br>range is wide, with long transmission distance. It can track identified target, handle multiple tags<br>at the same time, and improve the security of the data by encrypting. It has wide scan range. The<br>sight is limited to small obstacles. Therefore, different from other identification methods, it does<br>not need to recognize face to face. To identify more objects, RFID system does not need to scan<br>each object, but it can scan multiple objects at the same time. Each tag can contain a lot of<br>information at the same time, and even rewrite the data repeatedly. In terms of security, since the<br>information is transmitted through electromagnetic waves between RFID tags and readers, tags<br>can be inserted into objects or disguised with materials that will not block the propagation of<br>electromagnetic waves, which is more secure. It is faster and more convenient to identify. RFID, a<br>contactlessidentification method, is faster andsafer than traditional optical scanning identification,<br>withwideapplication.<br>(picture)</p>
+                        <p><br></p>
+                        <p style="text-align: center;">Problems ofRFID technologyandsolutions</p><p><br></p><p style="text-align: center;">Chiptechnology</p><p><br></p><p style="text-align: center;">Chip is the core of the RFID system. A tag chip is a system that integrates all circuits other than<br>tag antenna and matching line [8]. Chip is generally characterized by being thin, small, and low<br>cost. RFID chip design and manufacturing technology develops towards lower power<br>consumption, farther distance and lower cost. The production cost of tag determines its use scope,<br>so reducing the production cost of label is of great significance for the development of the Internet<br>of things. In the paper [9], the tag without chip developed has lower cost than traditional tag<br>because there is no Integrated Circuit (IC), which has a great promotion for the popularity of the<br>Internetofthings.</p>
+                        <p><br></p>
+                        <p style="text-align: center;">Antennatechnology</p><p style="text-align: center;">Miniaturization has been a key problem in the design of RFID tag antenna. The antenna<br>bandwidth and gain as well as polarization are also the important research direction. Although<br>outside independent antenna has high Q value and is easy to manufacture, its volume is too big,<br>and it is easy to break. Tointegrate the antenna on the tag chip, there is no need of external device<br>to work, so as to make the tag much less in volume, and its production simpler, reducing the<br>production cost. In general, a lot of materials have no effect on the propagation of electromagnetic<br>wave, but for the objects with metal structure, metal can produce very serious interference on<br>antenna, resulting in a series of metal-resistant antenna. For the metal objects, it can make use of<br>themetal structuretoopenagap onthemetal bodytomakeaslotantenna[10].</p>
+                        <p><br></p>
+                        <p style="text-align: center;">IPaddress</p>
+                        <p style="text-align: center;">In the popularization of the Internet of things, it is a great challenge to make a unique ID number<br>for the tap chip of all objects. With the development of the Internet of things technology, the<br>number of objects online will far exceed the number of people online, and the demand for IP<br>addresses is greater. Pv6 (Internet Protocol version6) is the next generation IP protocol designed<br>by IETF (Internet Engineering Task Force) to replace the existing IP protocol (IPv4) according to<br>360 encyclopedia. IPv6 addresses are plentiful enough to support existing and new applications<br>thatpurporttomake upawebaddressforeverypieceoftheworld.</p>
+                        <p><br></p>
+                        <p style="text-align: center;">Securitytechnology</p>
+                        <p style="text-align: center;">Since most of RFID equipment adopts an open standard communication protocol for data<br>transmission, it makes the RFID system vulnerable to malicious invasion. RFID air interface often<br>encounters the following risks [11]: (1) data interception: wireless transmission is open; anyone<br>can receive information by the receiving device. (2) fake attack: since the common RFID<br>protocols such as EPC, ISO, etc. have no regulation on the certification for tag, reader device<br>could not identify the authenticity of cloned tag.Attacker can tamper the received information and<br>then send it to reader. (3) Target tracking: RFID tag sends EPC coding as plain text; any reader<br>compatible with the protocol can read the tag code. Because electronic coding has unique ID<br>number in the world, the attacker can obtain EPC coding to figure out the location of the object<br>and personal information, causing great potential safety hazard and privacy. The current method<br>for RFID air interface data protection mainly includes data encryption, proprietary security<br>protocols,airinterfaceintrusiondetection,etc.</p>
+                        <p><br></p>
+                        <p style="text-align: center;">Because passive tags can only get very little energy from reader signal, signals feedback to reader<br>after gaining energy. This kind of tag will provide the energy for all readers to respond, and will<br>causethe information stored by tag are exposed,and even privacy information is exposed; in order<br>to protect the information security,Privacy PreservingAuthentication (PPA) is often used, but PPA<br>requires readers and tags to use shared keys for authentication and recognition [12]. If the<br>manufacturer presets the key in the tag, it will cause the key hosting problem, and the user cannot<br>generate his ownkey.At thesame time, there is nophysical interfacefor passive tags to connect to<br>other devices, so it is impossible to generate keys through physical connections. In addition, since<br>the communication between the reader and the tag is transmitted through the antenna, the<br>information cannot be intercepted, so that the key cannot be passed from the reader to the tag.<br>Since the size and the production cost of tag determines its storage and computing power in a<br>limited manner, it is not possible to implement some arithmetic based on cryptography to encrypt.<br>When the tag receives the query instruction from the reader,it returns a randomnumber of 16 bits;<br>after reader receives the random number,the number as a responseis returned to thetag.When the<br>tag checks whether this number is consistent with it sent number, it sends the product code (EPC)<br>or tag address (Tag ID). In the read/write user area operation, the reader receives the ID of the<br>electronic tag and sends an instruction to the tag requesting a new random number as the session<br>handlefortheread/write operation.</p>
+                        <p><br></p>
+                        <p style="text-align: center;">Prospect</p><p style="text-align: center;">As the Internet is closely related to people’s life increasingly, Internet of things has penetrated into<br>every corner in people’s life and work. From the above analysis, we can see that the development<br>of RFID technology as a key technology of internet of things cannot leave the innovation and<br>development of chip technology, antenna technology, data encryption technology and data<br>processing technology. The future chips will be thinner and thinner, with miniaturization, and will<br>greatly reduce the production cost; the antenna’s miniaturization degree is higher and higher; the<br>chip encryption technology is improved; data processing means is diverse, intelligent; coupled<br>with the popularity of IPv6, all will give bring great vitality to the development and popularization<br>ofinternetofthings.</p><p style="white-space: normal; text-align: center;">-END-</p><p style="white-space: normal; text-align: center;">Knowthelatest officialstatusofBCAC<br>WatchBCAChainofficialWeChat<br>PleasescantheQR codebelow</p>
+                        <p style="white-space: normal; text-align: center;">
+                            <img src="images/d9f81f02e1f5fc424ab90913a2ac4b49.jpg" title="1535611384732837.jpg" alt="1535611384732837.jpg" width="130" height="180" border="0" vspace="0" style="width: 130px; height: 180px;"></p>
+                        <p><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--英文footer-->
+    <footer class="footer" id="pc_footer" style="position: relative">
+        <div class="foot clearfix">
+            <div class="foot_logo">
+                <img src="images/logo2.png" alt="logo">
+            </div>
+            <div class="foot_logo_phone">
+                <img src="images/mobile-Logo.png" width="100%" alt="logo">
+            </div>
+            <div class="foot_list">
+                <ul class="row">
+                    <li class="col-lg-4 col-md-4">
+                        <div class="list_title">Contact us</div>
+                        <div class="list_cont">Web site：www.bcachain.org</div>
+                        <div class="list_cont">WeChat：bcac0001</div>
+                    </li>
+                    <li class="col-lg-4 col-md-4">
+                        <div class="list_title">WeChat Qr code</div>
+                        <div class="list_cont">
+                            <img src="images/gongzhonghao.jpg" alt="" style="width: 120px">
+                        </div>
+                    </li>
+                    <li class="col-lg-4 col-md-4">
+                        <div class="list_title">Service WeChat</div>
+                        <div class="list_cont">
+                            <img src="images/service.png" alt="" style="width: 120px">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot_text">© Copyright 2018. All Rights Reserved.</div>
+    </footer>
+    <div class="swiper-slide main" id="phone_footer" style="position: relative">
+        <footer class="footer">
+            <div class="foot clearfix">
+                <div class="foot_logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="foot_logo_phone">
+                    <img src="images/mobile-Logo.png" width="100%" alt="logo">
+                </div>
+                <div style="float: left; width: 80%;padding-left: 7.6%;">
+                    <ul>
+                        <li>
+                            <div style="color: #fff;font-size: 20px;font-weight: bold;line-height: 40px">Contact us</div>
+                            <div class="list_cont" style="color: white;font-size: 13px;line-height: 20px">Web site：www.bcachain.org</div>
+                            <div class="list_cont" style="color: white;font-size: 13px;line-height: 20px">WeChat：bcac0001</div>
+                        </li>
+                        <li style="margin-top: 20px;">
+                            <div class="list_title" style="color: #fff;font-size: 20px;font-weight: bold;line-height: 50px">WeChat Qr code</div>
+                            <div class="list_cont">
+                                <img src="images/gongzhonghao.jpg" alt="" style="width: 120px">
+                            </div>
+                        </li>
+                        <li style="margin-top: 20px;">
+                            <div class="list_title" style="color: #fff;font-size: 20px;font-weight: bold;line-height: 50px">Service WeChat</div>
+                            <div class="list_cont">
+                                <img src="images/service.png" alt="" style="width: 120px">
+                            </div>
+                        </li>
+                    </ul>
+                    <div style="color: white;font-size: 11px;margin-top: 20px">Copyright ⓒ All Rights Reserved by BCAC</div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.1.6.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(function () {
+        var mainSwiper = new Swiper('#main_swiper',{
+            direction: 'vertical',
+            speed:800,
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.3,//触屏比率...
+            mousewheel: true,
+            height : window.innerHeight,
+            on:{
+                init:function(swiper){
+                    slide=this.slides.eq(0);
+                    slide.addClass('ani-slide');
+                },
+                transitionStart: function(){
+                    for(i=0;i<this.slides.length;i++){
+                        slide=this.slides.eq(i);
+                        slide.removeClass('ani-slide');
+                    }
+                },
+                transitionEnd: function(){
+                    slide=this.slides.eq(this.activeIndex);
+                    slide.addClass('ani-slide');
+                    if(this.activeIndex>=1){
+                        $(".go_up").show();
+                    }else {
+                        $(".go_up").hide();
+                    }
+                    var width = $("body").width();
+                    if(this.activeIndex<this.slides.length-1&&width<=767){
+                        $('.go_next').show();
+                    }else {
+                        $('.go_next').hide();
+                    }
+                    if(this.activeIndex==11){
+                        $(".phone_logo img").attr("src","images/logo2.png")
+                    }else {
+                        $(".phone_logo img").attr("src","images/logo.png")
+                    }
+                }
+            }
+        });
+        var OperationText = new Swiper('.operation_text', {
+            initialSlide :1
+            // spaceBetween: 10,//slide之间的距离（单位px）。
+        });
+        var OperationImg = new Swiper('.operation_img', {
+            initialSlide :1,
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true//设置为true则点击slide时会在这个slide产生过渡。..
+        });
+        OperationImg.controller.control = OperationText;
+        OperationText.controller.control = OperationImg;
+        var team_swiper = new Swiper('.team_swiper', {
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true,//设置为true则点击slide时会在这个slide产生过渡。..
+            navigation: {
+                nextEl: '.team_swiper_next',
+                prevEl: '.team_swiper_prev'
+            }
+        });
+
+        var develop_swiper = new Swiper('.develop_swiper', {
+            centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            // centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction'
+            },
+            navigation: {
+                nextEl: '.develop_swiper_next',
+                prevEl: '.develop_swiper_prev'
+            },
+            loop:true,
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true//设置为true则点击slide时会在这个slide产生过渡。..
+        });
+
+        var road_cont_phone = new Swiper('.road_cont_phone', {
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            freeMode: true,
+            scrollbar: {
+                el: '.swiper-scrollbar'
+            },
+            mousewheel: true
+        });
+    });
+</script>
+<script>
+    //获取参数
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+    //    if(getQueryString("e")=="1"){
+    //        $(".englishNav,.englishFooter").show();
+    //        $(".chineseNav,.chineseFooter").hide();
+    //    }
+</script>
+</body>
+</html>

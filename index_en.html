@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style class="vjs-styles-defaults">
+    .video-js {
+        width: 300px;
+        height: 150px;
+    }
+    .vjs-fluid {
+        padding-top: 56.25%
+    }
+    </style>
+    <style class="vjs-styles-dimensions">
+    .my-video-dimensions {
+        width: 1920px;
+        height: 1080px;
+    }
+    .my-video-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BCAChain</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/swiper-4.1.6.min.css" rel="stylesheet">
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="css/windows10/windows10.css" rel="stylesheet">
+    <link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+    <link href="css/index.css?v=47" rel="stylesheet">
+    <!--加载-->
+    <link href="css/pace-theme-barber-shop.css" rel="stylesheet">
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery.1.11.min.js"></script>
+    <script>
+        /* 设置html */
+        window.onload = function(){
+
+            changeWidth();
+            window.onresize = function(){
+                changeWidth();
+            };
+            function changeWidth(){
+                var width = $("#zatGo_earth").width();
+                $("html").css("font-size",width/30+"px");
+            }
+
+        };
+    </script>
+</head>
+<script>
+    function btn(url) {
+        window.location.href=url;
+    }
+</script>
+<body class="pace-done" style=""><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+    <div class="pace-progress-inner"></div>
+</div>
+    <div class="pace-activity"></div></div>
+<!-- 100% 超出部分隐藏 -->
+<div class="wrapper">
+    <div class="culmn">
+        <!-- 导航 -->
+        <nav class="nav" id="nav">
+            <div class="container clearfix">
+                <div class="nav-logo">
+                    <img src="images/logo.png" height="80%">
+                </div>
+                <div class="navbar-collapse" id="nav-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:;" class="swiper_list1">Home</a></li>
+                        <li><a href="https://github.com/BusinessCredit">GitHub</a></li>
+                        <li><a href="javascript:;" class="swiper_list2">White Paper</a></li>
+                        <!--<li><a href="javascript:;" class="swiper_list3">About</a></li>-->
+                        <!--<li><a href="javascript:;" class="swiper_list4">Product</a></li>-->
+                        <!--<li><a href="javascript:;" class="swiper_list5">RoadMap</a></li>-->
+                        <li><a href="javascript:;" class="smoothscroll swiper_list6" title="">Team</a></li>
+                        <li><a href="file/BCAC%20Foundation.pdf" class="smoothscroll" title="">Aptitude</a></li>
+                        <!--<li><a href="javascript:;" class="swiper_list7">Partner</a></li>-->
+                        <!--<li><a href="javascript:;" class="swiper_list8">Wallet</a></li>-->
+                        <li><a href="javascript:;" class="swiper_list8">Product</a></li>
+                        <li><a href="javascript:;" class="swiper_list9">News</a></li>
+                        <li><a href="javascript:;" class="swiper_list9">Contact</a></li>
+                        <li><a href="index.html" >EN/中文</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 手机导航 -->
+        <div class="nav_phone" id="nav_phone">
+            <a id="header-menu-trigger" href="javascript:;">
+                <span class="header-menu-icon"></span>
+            </a>
+            <div class="phone_logo">
+                <img src="images/logo.png" width="100%" alt="logo">
+            </div>
+        </div>
+        <nav id="menu-nav-wrap">
+            <a href="javascript:;" class="close-button" title="close"><span>Close</span></a>
+            <h3>BCAC</h3>
+            <ul class="nav-list">
+                <li class="current"><a class="smoothscroll swiper_list1" href="javascript:;" title="">Home</a></li>
+                <li><a class="smoothscroll" href="https://github.com/BusinessCredit" title="">GitHub</a></li>
+                <li><a class="smoothscroll swiper_list2" href="javascript:;" title="">White Paper</a></li>
+                <!--<li><a class="smoothscroll swiper_list3" href="javascript:;" title="">About</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list4" href="javascript:;" title="">Product</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list5" href="javascript:;" title="">RoadMap</a></li>-->
+                <li><a class="smoothscroll swiper_list6" href="javascript:;" title="">Team</a></li>
+                <li><a class="smoothscroll " href="file/BCAC%20Foundation.pdf" title="">Aptitude</a></li>
+                <!--<li><a class="smoothscroll swiper_list7" href="javascript:;" title="">Partner</a></li>-->
+                <!--<li><a class="smoothscroll swiper_list8" href="javascript:;" title="">Wallet</a></li>-->
+                <li><a class="smoothscroll swiper_list8" href="javascript:;" title="">Product</a></li>
+                <li><a class="smoothscroll swiper_list9" href="javascript:;" title="">News</a></li>
+                <li><a class="smoothscroll swiper_list9" href="javascript:;" title="">Contact</a></li>
+                <li><a href="index.html" >EN/中文</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!--返回首页按钮-->
+    <div class="go_up" style="display: block;">
+        <i class="icon-UpArrow"></i>
+    </div>
+    <div class="swiper-container swiper-container-vertical" id="main_swiper">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+<!--首页-->
+            <div class="swiper-slide main swiper-slide-prev" id="first_page">
+                <div class="first_bg" style="display: none"></div>
+                <div class="main_cont">
+                    <section class="zatGo_earth clearfix" id="zatGo_earth">
+                        <div class="travel_nr z-index">
+                            <div class="cont_title animate-this" style="color: #fff">BCAC</div>
+                            <div class="cont_text animate-this" style="color: #fff">
+                                <p>Building a new retail commercial credit economy ecology based on blockchain</p>
+                            </div>
+                            <div class="cont_icon_list clearfix">
+                                <ul class="clearfix">
+                                    <!--facebook-->
+                                    <li class="animate-this" onclick="window.open('https://facebook.com/BCAChain')"></li>
+                                    <!--twitter-->
+                                    <li class="animate-this" onclick="window.open('https://twitter.com/BCAChain')"></li>
+                                    <!--电报-->
+                                    <li class="animate-this" onclick="window.open('https://t.me/bcachainofficial')"></li>
+                                    <!--github-->
+                                    <li class="animate-this" onclick="window.open('https://github.com/BusinessCredit')"></li>
+                                </ul>
+                            </div>
+                            <div class="cont_title animate-this" style="color: #fff">
+                                <div class="top_btn animate-this" style="">
+                                    <a href="download/release/index_en.html" id="down_btn" target="_blank">Download BCAC Wallet</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+ <!--白皮书-->
+            <div class="swiper-slide main white_main ani-slide swiper-slide-active">
+                <div class="main_cont" id="white">
+                    <section class="white_paper z-index clearfix">
+                        <div class="white_nr">
+                            <div class="cont_title animate-this">White Paper</div>
+                            <div class="bottom_border border_color1 animate-this"></div>
+                            <div class="cont_text">
+                                <p class="animate-this">BCAC：Build A New Retail Business Credit Econmic Ecology Based On Blockchain</p>
+                            </div>
+                            <div class="white_btn animate-this">
+                                <a href="file/BCAChain White Paper_en.pdf" target="_blank">Download</a>
+                            </div>
+                        </div>
+                        <div class="white-img animate-this">
+                            <img src="images/white-img1.png" width="" height="" align="">
+                        </div>
+                    </section>
+                </div>
+            </div>
+<!--关于BCAC-->
+            <div class="swiper-slide main swiper-slide-next">
+                <div class="main_cont" id="about">
+                    <section class="what_zatGo z-index clearfix">
+                        <div class="what_bg" style="height: 110%;bottom: -60%;left: -13%;width: 120%"></div>
+                        <div class="what_nr">
+                            <div class="cont_title animate-this">BCAC About</div>
+                            <div class="bottom_border border_color2 animate-this"></div>
+                            <div class="cont_text">
+                                <p class="animate-this">
+                                    <span style="display: inline-block; margin-bottom: 6px;">BCAChain is a blockchain industry application project jointly launched by industry elites in the financial, retail, social e-commerce and other fields and former IBM blockchain laboratory technology members in early 2018, focusing on the new retail market of 100 billion yuan. To build a new retail commercial credit economy based on blockchain.</span>
+                                    <span style="display: inline-block; margin-bottom: 6px;">BCAChain first proposed the RAFT consensus and applied KYC and other authentication technologies to accelerate and optimize the application of blockchain. BCAChain is building a new decentralized retail platform with its own private chain technology to help develop blockchain and new retail entities.</span>
+                                    <span style="display: inline-block; margin-bottom: 6px;">At present, BCAChain has completed the release of the blockchain low-level code open source and DAPP wallet.</span>
+                                    <span style="display: inline-block; margin-bottom: 6px;">On November 8, 2018, the BCAC Foundation officially joined the China Cloud System Industry Innovation Strategic Alliance to become a governing unit.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="what_video animate-this" style="margin-left: 7.7%">
+                            <img src="images/bcac_img_porject_en.png" alt="" style="width: 700px">
+                        </div>
+                    </section>
+                </div>
+            </div>
+<!--项目-->
+            <div class="swiper-slide main">
+                <div class="main_cont" id="project">
+                    <section class="weDo_zatGo clearfix">
+                        <div class="weDo_bg1"></div>
+                        <div class="weDo_bg2"></div>
+
+                        <div class="weDo_nr z-index">
+                            <div class="cont_title animate-left opacity">Product</div>
+                            <div class="bottom_border border_color2 animate-this"></div>
+                            <div class="cont_text">
+                                <p class="animate-right opacity">
+                                    BCAC business link will fully launch the retail traceability plan, and use blockchain technology, Internet of things technology and big data to track the full link of retail commodities to ensure the integrity of commodity information.
+                                    And use blockchain technology to strengthen privacy protection of user data and build consensus trust at low cost. Build a big data system to deeply analyze customers' demands and improve shopping experience.
+                                    Application scenarios include: new retail, personal credit system, enterprise credit system, etc.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="weDo_img">
+                            <div class="weDo_img_cont1 animate-this">
+                                <img src="images/weDo_img3.png" width="100%" alt="">
+                                <p class="weDo_img_text" style="margin-top: -0.5rem">reshape the new retail system</p>
+                            </div>
+                            <div class="weDo_img_cont2 animate-this">
+                                <p class="weDo_img_text">Use blockchain technology to build retail trust</p>
+                                <img src="images/weDo_img4.png" width="100%" alt="">
+
+                            </div>
+                            <div class="weDo_img_cont3 animate-this">
+                                <p class="weDo_img_text">Create a big data system</p>
+                                <img src="images/weDo_img5.png" width="100%" alt="">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+<!--路线图-->
+            <div class="swiper-slide main" style="background: #F3F8FB">
+                <div class="main_cont" id="road">
+                    <section class="road_map clearfix">
+                        <div class="road_title">
+                            <h3 class="cont_title animate-this">RoadMap</h3>
+                            <span class="bottom_border border_color2 animate-this"></span>
+                        </div>
+                        <div class="road_cont animate-this">
+                            <img src="images/ReoadMap_en1.png" width="100%" alt="ReoadMap">
+                        </div>
+                        <div class="road_cont_phone swiper-container swiper-container-vertical swiper-container-free-mode">
+                            <div class=" swiper-wrapper" style="transition-duration: 0ms;">
+                                <div class="swiper-slide road_phone_slide">
+                                    <img src="images/ReoadMap2_en.png" width="100%" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"><div class="swiper-scrollbar-drag"></div></div>
+                            <div class="road_mask"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+<!--团队-->
+            <div class="swiper-slide main" id="team">
+                <div class="main_cont">
+                    <section class="operation_team">
+                        <div class="team_title">
+                            <h5 class="cont_title animate-this">Core Team</h5>
+                            <span class="bottom_border border_color2 animate-this"></span>
+                        </div>
+                        <div class="operation_nr operation_nr_pc">
+                            <ul class="row">
+                                <li class="col-lg-6 col-md-6 col-xs-12">
+                                    <img src="images/Tim.png" class="list_img animate-this">
+                                    <div class="list_cont">
+                                        <span class="list_name animate-this">杨荣添（Tim）</span>
+                                        <p class="list_introduce animate-this">
+                                            Graduated from Auckland University of Technology, Master of Finance. With many years of overseas investment, cross-border e-commerce global channel development and supply chain finance experience, in recent years, he has focused on the research and practice of blockchain technology to solve new retail industry problems.</div>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-xs-12">
+                                    <img src="images/Max.png" class="list_img animate-this">
+                                    <div class="list_cont">
+                                        <span class="list_name animate-this">蔡壮 （Max）</span>
+                                        <p class="list_introduce animate-this">
+                                            Member of the China Cloud System Alliance, member of the China Communications Industry Association Blockchain Professional Committee. In-depth research on the transformation of new industries in the traditional industry, participated in and invested in several new retail-related projects                                    </div>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-xs-12">
+                                    <img src="images/Tommy.png" class="list_img animate-this">
+                                    <div class="list_cont">
+                                        <span class="list_name animate-this">文沛（Tommy）</span>
+                                        <p class="list_introduce animate-this">
+                                            Master of Computers,He was a senior engineer in the big data team of the world's top 500 technology companies.As an architect / Project Manager in many big data projects.
+                                            He has been selected as a researcher at the IBM Blockchain Lab, and has in-depth research on distributed computing and blockchain technology.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-xs-12">
+                                    <img src="images/Dufren.png" class="list_img animate-this">
+                                    <div class="list_cont">
+                                        <span class="list_name animate-this">杨成武（Dufren）</span>
+                                        <p class="list_introduce animate-this">
+                                            Graduated from Sichuan University of Foreign Languages, has double degree, proficient in English and Spanish. In 2013, he translated into the ETH white paper and became involved in digital currency.
+                                            An early investors IOTA, BYTEBALL, NXT and have participated in the top-level design.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="operation_nr operation_nr_phone">
+                            <div class="swiper-container operation_img swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                    <div class="swiper-slide swiper_img animate-this" style=""><img src="images/Tim.png" width="100%" alt=""></div>
+                                    <div class="swiper-slide swiper_img animate-this" style=""><img src="images/Tommy.png" width="100%" alt=""></div>
+                                    <div class="swiper-slide swiper_img animate-this" style=""><img src="images/Max.png" width="100%" alt=""></div>
+                                    <div class="swiper-slide swiper_img animate-this" style=""><img src="images/Dufren.png" width="100%" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="swiper-container operation_text swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                    <div class="swiper-slide swiper_text animate-this">
+                                        <p class="swiper_text_title">杨荣添（Tim）</p>
+                                        <p class="swiper_text_cont" style="text-align: justify;">
+                                            Graduated from Auckland University of Technology, Master of Finance. With many years of overseas investment, cross-border e-commerce global channel development and supply chain finance experience, in recent years, he has focused on the research and practice of blockchain technology to solve new retail industry problems.
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide swiper_text animate-this">
+                                        <p class="swiper_text_title">蔡壮 （Max）</p>
+                                        <p class="swiper_text_cont" style="text-align: justify;">
+                                            Member of the China Cloud System Alliance, member of the China Communications Industry Association Blockchain Professional Committee. In-depth research on the transformation of new industries in the traditional industry, participated in and invested in several new retail-related projects
+                                    </div>
+                                    <div class="swiper-slide swiper_text animate-this">
+                                        <p class="swiper_text_title">文沛（Tommy）</p>
+                                        <p class="swiper_text_cont" style="text-align: justify;">
+                                            Master of Computers,He was a senior engineer in the big data team of the world's top 500 technology companies.As an architect / Project Manager in many big data projects.
+                                            He has been selected as a researcher at the IBM Blockchain Lab, and has in-depth research on distributed computing and blockchain technology
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide swiper_text animate-this">
+                                        <p class="swiper_text_title">杨成武（Dufren）</p>
+                                        <p class="swiper_text_cont" style="text-align: justify;">
+                                            Graduated from Sichuan University of Foreign Languages, has double degree, proficient in English and Spanish. In 2013, he translated into the ETH white paper and became involved in digital currency.
+                                            An early investors IOTA, BYTEBALL, NXT and have participated in the top-level design.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!--顾问团队-->
+            <div class="swiper-slide main" style="">
+                <div class="main_cont">
+                    <section class="team_zatGo z-index clearfix">
+                        <!--<div class="team_bg1"></div>-->
+                        <!--<div class="team_bg2"></div>-->
+                        <div class="team_title">
+                            <h3 class="cont_title animate-this">Consultant team</h3>
+                            <span class="bottom_border border_color1 animate-this"></span>
+                        </div>
+                        <div class="team_cont row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="cont_div">
+                                <img class="team_tx animate-this" src="images/shen.jpg" style="border-radius: 50%" alt="">
+                                <h3 class="team_name animate-this">沈寓实(ShenYuShi)</h3>
+                                <div class="introduce animate-this">
+                                    <p class="introduce_cont">
+                                        Special expert of the National “Thousand Talents Program”, researcher of the Internet Industry Research Institute and Bachelor of Electronic Engineering of Tsinghua University. Master of Science in Computer Science and Ph.D. from the University of California, San Diego, and Master of Business Administration from the University of Washington, USA. Nearly 20 years of research, R&D and management experience in the ICT field, cyberspace strategy experts, international experts in cloud computing, big data, network security, video codec and wireless communications.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="cont_div">
+                                <img class="team_tx animate-this" src="images/yangchao.png" alt="">
+                                <h3 class="team_name animate-this">杨超(YangChao)</h3>
+                                <div class="introduce animate-this">
+                                    <p class="introduce_cont">
+                                        PricewaterhouseCoopers TeachLeader, founding partner of Hyperlink Capital, blockchain technology expert, early investor in the blockchain. Neo community developer, Neblio code contributor, sponsor of the Neblio China Foundation, IHT blockchain expert consultant.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" src="images/Core-Team1.jpg" alt="">
+                                    <h3 class="team_name animate-this">唐敏(TangMin)</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            Associate professor of Chongqing Technology and Business University,Master Tutor. Her main research directions :discovery of e-commerce data, enterprise informatization , management of information system,data analysis and decision support, energy management and low-carbon development.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="col-lg-4 col-md-4 col-sm-4">-->
+                                <!--<div class="cont_div">-->
+                                    <!--<img class="team_tx animate-this" src="images/Core-Team2.jpg" alt="">-->
+                                    <!--<h3 class="team_name animate-this">杨立（YangLi）</h3>-->
+                                    <!--<div class="introduce animate-this">-->
+                                        <!--<p class="introduce_cont">-->
+                                            <!--The original co-founder of DadxChain, almost 8 years of experience in the Internet industry, 5 years of experience in digital marketing in the financial industry, providing digital marketing solutions for nearly 10 large banking institutions including Bank of China, China Construction Bank, Industrial Bank, and China CITIC Bank.-->
+                                        <!--</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </div>
+
+                        <div class="team_cont_phone">
+                            <div class="swiper-container team_swiper swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" src="images/shen.jpg" alt="">
+                                        <h3 class="team_name animate-this">沈寓实(ShenYuShi)</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                Special expert of the National “Thousand Talents Program”, researcher of the Internet Industry Research Institute and Bachelor of Electronic Engineering of Tsinghua University. Master of Science in Computer Science and Ph.D. from the University of California, San Diego, and Master of Business Administration from the University of Washington, USA. Nearly 20 years of research, R&D and management experience in the ICT field, cyberspace strategy experts, international experts in cloud computing, big data, network security, video codec and wireless communications.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" src="images/yangchao.png" alt="">
+                                        <h3 class="team_name animate-this">杨超（YangChao）</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                PricewaterhouseCoopers TeachLeader, founding partner of Hyperlink Capital, blockchain technology expert, early investor in the blockchain. Neo community developer, Neblio code contributor, sponsor of the Neblio China Foundation, IHT blockchain expert consultant.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" src="images/Core-Team1.jpg" alt="">
+                                        <h3 class="team_name animate-this">唐敏(TangMin)</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                Associate professor of Chongqing Technology and Business University,Master Tutor. Her main research directions :discovery of e-commerce data, enterprise informatization , management of information system,data analysis and decision support, energy management and low-carbon development.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--<div class="swiper-slide team_silde">-->
+                                        <!--<img class="team_tx animate-this" src="images/Core-Team2.jpg" alt="">-->
+                                        <!--<h3 class="team_name animate-this">杨立（YangLi）</h3>-->
+                                        <!--<div class="introduce animate-this">-->
+                                            <!--<p class="introduce_cont">-->
+                                                <!--The original co-founder of DadxChain, almost 8 years of experience in the Internet industry, 5 years of experience in digital marketing in the financial industry, providing digital marketing solutions for nearly 10 large banking institutions including Bank of China, China Construction Bank, Industrial Bank, and China CITIC Bank.</p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                </div>
+                                <div class="swiper-button-next team_swiper_next"></div>
+                                <div class="swiper-button-prev team_swiper_prev"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+<!--伙伴-->
+            <!--投资机构-->
+            <div class="swiper-slide main">
+                <div class="main_cont" id="partner1">
+                    <section class="team_zatGo z-index clearfix">
+                        <!--<div class="team_bg1"></div>-->
+                        <div class="team_bg2"></div>
+                        <div class="team_title">
+                            <h3 class="cont_title animate-this">Investment institutions</h3>
+                            <span class="bottom_border border_color1 animate-this"></span>
+                            <h5 class="little_title animate-this"></h5>
+                        </div>
+
+                        <div class="team_cont row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" src="images/logo/Crypto%20Capital.png" alt="">
+                                    <h3 class="team_name animate-this">Crypto Capital</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            Cryptography Capital is a well-known investment institution focused on the blockchain field. Relying on the strong resource advantages of the blockchain field and the professional investment research team, since 16 years, it has participated in many projects such as Cybermiles, Abra, only chain, and the original chain Bytom. Involved in mines, wallets, exchanges, blockchain technology industrial parks, etc.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" src="images/logo/cryptonord.png" alt="">
+                                    <h3 class="team_name animate-this">Cryptonord</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            The famous blockchain foundation fund in Europe has invested in several European blockchain projects, including the Joors and joorsChain projects of the well-known European consortiums of the Wallenberg family. Cry participated in the early investment
+                                            of BCAChain as a cornerstone fund, providing the necessary resources for BCAC to enter the European market.                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team_cont_phone">
+                            <div class="swiper-container team_swiper swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" src="images/logo/Crypto%20Capital.png" alt="">
+                                        <h3 class="team_name animate-this">Crypto Capital</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                Cryptography Capital is a well-known investment institution focused on the blockchain field. Relying on the strong resource advantages of the blockchain field and the professional investment research team, since 16 years, it has participated in many projects such as Cybermiles, Abra, only chain, and the original chain Bytom. Involved in mines, wallets, exchanges, blockchain technology industrial parks, etc.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" src="images/logo/cryptonord.png" alt="">
+                                        <h3 class="team_name animate-this">Cryptonord</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                The famous blockchain foundation fund in Europe has invested in several European blockchain projects, including the Joors and joorsChain projects of the well-known European consortiums of the Wallenberg family. Cry participated in the early investment
+                                                of BCAChain as a cornerstone fund, providing the necessary resources for BCAC to enter the European market.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next team_swiper_next"></div>
+                                <div class="swiper-button-prev team_swiper_prev"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+            <!--支持单位-->
+            <div class="swiper-slide main">
+                <div class="main_cont">
+                    <section class="team_zatGo z-index clearfix">
+                        <!--<div class="team_bg1"></div>-->
+                        <div class="team_bg2"></div>
+                        <div class="team_title">
+                            <h3 class="cont_title animate-this">Supporters</h3>
+                            <span class="bottom_border border_color1 animate-this"></span>
+                            <h5 class="little_title animate-this"></h5>
+                        </div>
+                        <div class="team_cont row">
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" style="height: 5.5vw;max-height: 90px" src="images/logo/bcex.png" alt="">
+                                    <h3 class="team_name animate-this">BCEX</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            BCEX is the world's leading digital asset trading platform, dedicated to delivering the best trading experience for global users with the highest industry standards. The model of BCEX is to bring projects of sustainable value to customers, and only those projects with the highest quality will be selected and provide transaction services.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" style="height: 5.5vw;max-height: 90px" src="images/logo/zbg3.png" alt="">
+                                    <h3 class="team_name animate-this" >ZBG</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            ZBG trading platform is the world's top community-based innovative currency trading platform launched in July 2018, and is wholly owned by ZB. ZBG platform creates POW+POS trading and mining mechanism, and is committed to building a globally connected trading alliance based on the technical system of ZB.com.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" style="height: 5.5vw;max-height: 85px"  src="images/logo/chinaCloud.png" alt="">
+                                    <h3 class="team_name animate-this" style="font-size: 17px;padding-bottom: 0">China Cloud System Industry Innovation Strategic Alliance</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            The Alliance was announced at the Great Hall of the People in Beijing on November 13, 2013. The cloud system with cloud platform, cloud network, cloud terminal, cloud service and cloud security as the five themes is the core of the transformation of the new generation of information technology.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <div class="cont_div">
+                                    <img class="team_tx animate-this" style="height: 5.5vw;max-height: 85px" src="images/logo/ccia.jpg" alt="">
+                                    <h3 class="team_name animate-this" style="font-size: 19px;padding-bottom: 0;">CCIA Blockchain Special Committee</h3>
+                                    <div class="introduce animate-this">
+                                        <p class="introduce_cont">
+                                            China Communications Industry Association Blockchain Professional Committee (referred to as "CCIA Blockchain Special Committee"), affiliated to China Communications Industry Association, build blockchain industry clusters, integrate market alliances, build a new pattern of industrial application, and strive Realize the phased results of the national blockchain strategy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="col-lg-3 col-md-3 col-sm-3">-->
+                                <!--<div class="cont_div">-->
+                                    <!--<img class="team_tx animate-this" style="height: 5.5vw;max-height: 90px" src="images/logo/swkj.png" alt="">-->
+                                    <!--<h3 class="team_name animate-this" style="font-size: 19px">Siwei technology</h3>-->
+                                    <!--<div class="introduce animate-this">-->
+                                        <!--<p class="introduce_cont">-->
+                                            <!--Chongqing siwei technology co., LTD., national high-tech enterprise, double-soft certification enterprise, China communications industry association block chain professional committee unit, was listed in chongqing equity trading center in August 2017.                                        </p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </div>
+
+                        <div class="team_cont_phone">
+                            <div class="swiper-container team_swiper swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" style="border-radius: 0" src="images/logo/bcex.png" alt="">
+                                        <h3 class="team_name animate-this">BCEX</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                BCEX is the world's leading digital asset trading platform, dedicated to delivering the best trading experience for global users with the highest industry standards. The model of BCEX is to bring projects of sustainable value to customers, and only those projects with the highest quality will be selected and provide transaction services.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" style="border-radius: 0"  src="images/logo/zbg_phone.png" alt="">
+                                        <h3 class="team_name animate-this">ZBG</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                ZBG trading platform is the world's top community-based innovative currency trading platform launched in July 2018, and is wholly owned by ZB. ZBG platform creates POW+POS trading and mining mechanism, and is committed to building a globally connected trading alliance based on the technical system of ZB.com.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" style="border-radius: 0"  src="images/logo/chinaCloud.png" alt="">
+                                        <h3 class="team_name animate-this">China Cloud System Industry Innovation Strategic Alliance</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                The Alliance was announced at the Great Hall of the People in Beijing on November 13, 2013. The cloud system with cloud platform, cloud network, cloud terminal, cloud service and cloud security as the five themes is the core of the transformation of the new generation of information technology.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide team_silde">
+                                        <img class="team_tx animate-this" style="border-radius: 0"  src="images/logo/ccia.jpg" alt="">
+                                        <h3 class="team_name animate-this">CCIA Blockchain Special Committee</h3>
+                                        <div class="introduce animate-this">
+                                            <p class="introduce_cont">
+                                                The China Association of Communications Industry Blockchain Professional Committee, affiliated to the China Communications Industry Association (Head of the Ministry of Industry and Information Technology of the People's Republic of China), strategically positioned as the leader of the Chinese blockchain industry, with link value and mutual trust as a strategy Vision, to serve the national blockchain strategy as a strategic mission, take the Secretary-General as the origin, build a blockchain industrial cluster with members as the multi-center, integrate market complexes, build a new pattern of industrial application, and strive to achieve Phased results of the national blockchain strategy.                                        </div>
+                                    </div>
+                                    <!--<div class="swiper-slide team_silde">-->
+                                        <!--<img class="team_tx animate-this" style="border-radius: 0"  src="images/logo/swkj.png" alt="">-->
+                                        <!--<h3 class="team_name animate-this">Siwei technology</h3>-->
+                                        <!--<div class="introduce animate-this">-->
+                                            <!--<p class="introduce_cont">-->
+                                                <!--Chongqing siwei technology co., LTD., national high-tech enterprise, double-soft certification enterprise, China communications industry association block chain professional committee unit, was listed in chongqing equity trading center in August 2017.                                            </p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                </div>
+                                <div class="swiper-button-next team_swiper_next"></div>
+                                <div class="swiper-button-prev team_swiper_prev"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+<!--钱包-->
+            <div class="swiper-slide main platform_main">
+                <div class="main_cont" id="wallet">
+                    <section class="road_map clearfix">
+                        <div class="road_title">
+                            <h3 class="cont_title animate-this">Wallet</h3>
+                            <span class="bottom_border border_color2 animate-this"></span>
+                        </div>
+
+                        <div class="road_cont animate-this" style="text-align: center">
+                            <img src="images/mobile.png" width="100%" alt="ZatGo App">
+                            <div class="white_btn animate-this" style="width: auto;display: inline-block;padding: 0 20px;">
+                                <a href="download/release/index_en.html" id="" target="_blank">Download BCAC Wallet</a>
+                            </div>
+                        </div>
+                        <!--<div class="road_cont_phone" style="height: auto">-->
+                        <!---->
+                        <!--</div>-->
+
+                        <div class="road_cont_phone swiper-container swiper-container-vertical swiper-container-free-mode">
+                            <div class=" swiper-wrapper" style="transition-duration: 0ms;">
+                                <div class="swiper-slide road_phone_slide">
+                                    <img src="images/mobile.png" width="100%" alt="">
+                                </div>
+                                <div class="white_btn animate-this" style="margin:10px auto;">
+                                    <a href="download/release/index_en.html" id="down_btn" target="_blank">Download BCAC Wallet</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+<!--联系我们-->
+            <div class="swiper-slide main">
+                <div class="swiper-slide main">
+                    <div class="main_cont" id="develop">
+                        <section class="develop_zatGo z-index clearfix">
+                        <div class="develop_nr z-index">
+                            <div class="cont_title animate-left opacity">News</div>
+                            <div class="bottom_border border_color2 animate-this"></div>
+                            <div class="cont_text ">
+                                <p class="animate-right opacity"></p>
+                            </div>
+                        </div>
+
+                            <div class="develop_cont animate-this" style="margin: 0 auto">
+                                <div class="swiper-container develop_swiper swiper-container-horizontal">
+                                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-624.5px, 0px, 0px);">
+                                            <!--{list catid=19 order=listorder_desc,updatetime}-->
+                                            <div class="swiper-slide develop_silde swiper-slide-active" data-swiper-slide-index="0">
+                                                <div class="silde_cont" style="height: 200px">
+                                                    <h3 class="develop_name" data-text="Wallet API" onclick='window.location.href = "show_news_en.html"'>Asian roadshow of BCAC in the third quarter of 2018</h3>
+                                                    <div class="introduce_cont" style="position: absolute;right: 47px;bottom: 25px">
+                                                        2018-09-01
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--{/list}-->
+                                            <div class="swiper-slide develop_silde swiper-slide-active" data-swiper-slide-index="0">
+                                                <div class="silde_cont" style="height: 200px">
+                                                    <h3 class="develop_name" data-text="Wallet API" onclick='window.location.href = "show_news_en.html"'>License for Chonqing Svkeji Co.,Ltd.,BCAC strategic cooperation organization</h3>
+                                                    <div class="introduce_cont" style="position: absolute;right: 47px;bottom: 25px">
+                                                        2018-09-01
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide develop_silde swiper-slide-active" data-swiper-slide-index="0">
+                                                <div class="silde_cont" style="height: 200px">
+                                                    <h3 class="develop_name" data-text="Wallet API" onclick='window.location.href = "show_news_en.html"'>Introduction to Internet of Things RFID by BCAChain</h3>
+                                                    <div class="introduce_cont" style="position: absolute;right: 47px;bottom: 25px">
+                                                        2018-09-01
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="swiper-pagination develop_pagination swiper-pagination-fraction">
+                                        <span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">3</span>
+                                    </div>
+                                    <div class="swiper-button-next develop_swiper_next" style="top: 117px;"></div>
+                                    <div class="swiper-button-prev develop_swiper_prev" style="top: 117px;"></div>
+                                </div>
+                                <div class="develop_bottom">
+                                    <div class="develop_bottom_cont"></div>
+                                </div>
+                            </div>
+                    </section>
+                    </div>
+                </div>
+
+                <footer class="footer" id="pc_footer">
+                    <div class="foot clearfix">
+                        <div class="foot_logo animate-this">
+                            <img src="images/logo2.png" alt="logo">
+                        </div>
+                        <div class="foot_logo_phone animate-this">
+                            <img src="images/mobile-Logo.png" width="100%" alt="logo">
+                        </div>
+                        <div class="foot_list">
+                            <ul class="row">
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">Contact us</div>
+                                    <div class="list_cont animate-this">Web site：www.bcachain.org</div>
+                                    <div class="list_cont animate-this">WeChat：bcac0001</div>
+                                </li>
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">WeChat Qr code</div>
+                                    <!--<div class="list_cont animate-this">Telegram：ZatGo承云</div>-->
+                                    <!--<div class="list_cont animate-this">BeeChat：ZatGo官方群</div>-->
+                                    <!--<div class="list_cont animate-this">Twitter：ZatGo_official</div>-->
+                                    <div class="list_cont animate-this">
+                                        <img src="images/gongzhonghao.jpg" alt="" style="width: 120px">
+                                    </div>
+                                </li>
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">Service WeChat</div>
+                                    <!--<div class="list_cont animate-this">Reply”WhitePaper”to WeChat public-->
+                                        <!--account to download QR code.</div>-->
+                                    <!--<div class="list_cont animate-this">Wechat subscription: gobyzat</div>-->
+                                    <div class="list_cont animate-this">
+                                        <img src="images/service.png" alt="" style="width: 120px">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot_text animate-this">© Copyright 2018. All Rights Reserved.</div>
+                </footer>
+            </div>
+            <div class="swiper-slide main" id="phone_footer">
+                <footer class="footer">
+                    <div class="foot clearfix">
+                        <div class="foot_logo animate-this">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                        <div class="foot_logo_phone animate-this">
+                            <img src="images/mobile-Logo.png" width="100%" alt="logo">
+                        </div>
+                        <div class="foot_list">
+                            <ul class="row">
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">Contact us</div>
+                                    <div class="list_cont animate-this">Web site：www.bcachain.org</div>
+                                    <div class="list_cont animate-this">WeChat：bcac0001</div>
+                                </li>
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">WeChat Qr code</div>
+                                    <!--<div class="list_cont animate-this">Telegram：ZatGo承云</div>-->
+                                    <!--<div class="list_cont animate-this">BeeChat：ZatGo官方群</div>-->
+                                    <!--<div class="list_cont animate-this">Twitter：ZatGo_official</div>-->
+                                    <div class="list_cont animate-this">
+                                        <img src="images/gongzhonghao.jpg" alt="" style="width: 120px">
+                                    </div>
+                                </li>
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="list_title animate-this">Service WeChat</div>
+                                    <!--<div class="list_cont animate-this">Reply”WhitePaper”to WeChat public-->
+                                        <!--account to download QR code.</div>-->
+                                    <!--<div class="list_cont animate-this">Wechat subscription: gobyzat</div>-->
+                                    <div class="list_cont animate-this">
+                                        <img src="images/service.png" alt="" style="width: 120px">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot_text animate-this">Copyright ⓒ All Rights Reserved by BCAC</div>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-4.1.6.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+    $(function () {
+        var mainSwiper = new Swiper('#main_swiper',{
+            direction: 'vertical',
+            speed:800,
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.3,//触屏比率...
+            mousewheel: true,
+            height : window.innerHeight,
+            on:{
+                init:function(swiper){
+                    slide=this.slides.eq(0);
+                    slide.addClass('ani-slide');
+                },
+                transitionStart: function(){
+                    for(i=0;i<this.slides.length;i++){
+                        slide=this.slides.eq(i);
+                        slide.removeClass('ani-slide');
+                    }
+                },
+                transitionEnd: function(){
+                    slide=this.slides.eq(this.activeIndex);
+                    slide.addClass('ani-slide');
+                    if(this.activeIndex>=1){
+                        $(".go_up").show();
+                    }else {
+                        $(".go_up").hide();
+                    }
+                    var width = $("body").width();
+                    if(this.activeIndex<this.slides.length-1&&width<=767){
+                        $('.go_next').show();
+                    }else {
+                        $('.go_next').hide();
+                    }
+                    if(this.activeIndex==11){
+                        $(".phone_logo img").attr("src","images/logo2.png")
+                    }else {
+                        $(".phone_logo img").attr("src","images/logo.png")
+                    }
+                },
+            }
+        });
+
+        $('.go_next').click(function(){
+            mainSwiper.slideNext();
+        });
+
+        $('.swiper_list1,.go_up').click(function(){
+            mainSwiper.slideTo(0, 1000, false);
+        })
+        $('.swiper_list2').click(function(){
+            mainSwiper.slideTo(1, 1000, false);
+        })
+        $('.swiper_list3').click(function(){
+            mainSwiper.slideTo(2, 1000, false);
+        })
+        $('.swiper_list4').click(function(){
+            mainSwiper.slideTo(3, 1000, false);
+        })
+        $('.swiper_list5').click(function(){
+            mainSwiper.slideTo(4, 1000, false);
+        })
+
+        $('.swiper_list6').click(function(){
+            mainSwiper.slideTo(5, 1000, false);
+        })
+
+        $('.swiper_list7').click(function(){
+            mainSwiper.slideTo(7, 1000, false);
+        })
+        $('.swiper_list8').click(function(){
+            mainSwiper.slideTo(9, 1000, false);
+        })
+        $('.swiper_list9').click(function(){
+            mainSwiper.slideTo(10, 1000, false);
+        })
+
+
+        var OperationText = new Swiper('.operation_text', {
+            initialSlide :1
+            // spaceBetween: 10,//slide之间的距离（单位px）。
+        });
+        var OperationImg = new Swiper('.operation_img', {
+            initialSlide :1,
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true//设置为true则点击slide时会在这个slide产生过渡。..
+        });
+        OperationImg.controller.control = OperationText;
+        OperationText.controller.control = OperationImg;
+
+        var team_swiper = new Swiper('.team_swiper', {
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true,//设置为true则点击slide时会在这个slide产生过渡。..
+            navigation: {
+                nextEl: '.team_swiper_next',
+                prevEl: '.team_swiper_prev'
+            }
+        });
+
+        var develop_swiper = new Swiper('.develop_swiper', {
+            centeredSlides: false,//若为真，那么活动块会居中，而非默认状态下的居左...
+            //spaceBetween: 10,//slide之间的距离（单位px）。
+            // centeredSlides: true,//若为真，那么活动块会居中，而非默认状态下的居左...
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction'
+            },
+            navigation: {
+                nextEl: '.develop_swiper_next',
+                prevEl: '.develop_swiper_prev'
+            },
+            loop:true,
+            slidesPerView: 'auto',//设置slider容器能够同时显示的slides数量
+            touchRatio: 0.2,//触屏比率...
+            slideToClickedSlide: true//设置为true则点击slide时会在这个slide产生过渡。..
+        });
+
+        var road_cont_phone = new Swiper('.road_cont_phone', {
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            freeMode: true,
+            scrollbar: {
+                el: '.swiper-scrollbar'
+            },
+            mousewheel: true
+        });
+
+    })
+
+
+
+
+</script>
+
+</body>
+</html>

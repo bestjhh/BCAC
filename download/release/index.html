@@ -1,0 +1,478 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="../../images/icon/favicon.ico" type="image/x-icon">
+    <title>BCAC钱包下载</title>
+    <style type="text/css">
+        /* css reset  */
+        body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,
+        form,fieldset,legend,button,input,textarea,th,td  {margin:0;padding:0;}
+        h1,h2,h3,h4,h5,h6{font-size:100%;}
+
+        address,cite,dfn,em,var{font-style:normal;}
+
+        code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+
+        small{font-size:12px;}
+
+        ul,ol{list-style:none;}
+
+        a{text-decoration:none;}
+
+        a:hover{text-decoration:underline;}
+
+        fieldset,img{border:0;}
+
+        button,input,select,textarea{font-size:100%;}
+
+        table{border-collapse:collapse;border-spacing:0;}
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main{
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        .header{
+            width: 100%;
+            padding-top: 20%;
+            background: url("images/top_bg.png") no-repeat top center;
+        }
+        @media (min-width: 1200px){
+            .header{
+                width: 100%;
+                padding-top: 12%;
+            }
+            .content{
+                width: 1170px;
+                margin: 0 auto;
+            }
+            .logo{
+                width: 180px;
+                height: 180px;
+                margin: 0 auto;
+            }
+            .logo img{
+                width: 100%;
+                height: 100%;
+            }
+            .introduce{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .introduce .name{
+                text-align: center;
+                font-size: 24px;
+                padding: 5px 0;
+            }
+            .introduce .name span{
+                display: inline;
+                width: auto;
+                height: auto;
+                padding: 3px 5px;
+                border-radius: 3px;
+                background: #40acf1;
+                font-size: 12px;
+                color: #fff;
+                margin: 0 5px 0 10px;
+                line-height: 1.4;
+                vertical-align: middle;
+            }
+            .introduce ul{
+                display: block;
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+            .introduce ul li{
+                display: inline-block;
+                width: auto;
+                padding: 0 10px ;
+                color: #969b9d;
+            }
+            .erwei{
+                width: 100%;
+                height: auto;
+                margin: 15px 0 50px 0;
+            }
+            .erwei .erwei_cont{
+                width: 180px;
+                height: 180px;
+                padding: 5px;
+                border: 1px solid #c2c2c2;
+                position: relative;
+                margin: 0 auto;
+            }
+            .down_btn{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .down_btn .btn_a{
+                display: inline-block;
+                width:200px;
+                height: 60px;
+                line-height: 60px;
+                background: #28caad;
+                font-size: 18px;
+                color: #ffffff;
+                border-radius: 30px;
+            }
+        }
+        @media (max-width: 1200px){
+            .content{
+                width: 900px;
+                margin: 0 auto;
+            }
+            .logo{
+                width: 160px;
+                height: 160px;
+                margin: 0 auto;
+            }
+            .logo img{
+                width: 100%;
+                height: 100%;
+            }
+            .introduce{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .introduce .name{
+                text-align: center;
+                font-size: 24px;
+                padding: 5px 0;
+            }
+            .introduce .name span{
+                display: inline;
+                width: auto;
+                height: auto;
+                padding: 3px 5px;
+                border-radius: 3px;
+                background: #40acf1;
+                font-size: 12px;
+                color: #fff;
+                margin: 0 5px 0 10px;
+                line-height: 1.4;
+                vertical-align: middle;
+            }
+            .introduce ul{
+                display: block;
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+            .introduce ul li{
+                display: inline-block;
+                width: auto;
+                padding: 0 10px ;
+                color: #969b9d;
+            }
+            .erwei{
+                width: 100%;
+                height: auto;
+                margin: 15px 0 50px 0;
+            }
+            .erwei .erwei_cont{
+                width: 120px;
+                height: 120px;
+                padding: 5px;
+                border: 1px solid #c2c2c2;
+                position: relative;
+                margin: 0 auto;
+            }
+            .down_btn{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .down_btn .btn_a{
+                display: inline-block;
+                width:200px;
+                height: 60px;
+                line-height: 60px;
+                background: #28caad;
+                font-size: 18px;
+                color: #ffffff;
+                border-radius: 30px;
+            }
+        }
+
+        @media (max-width: 991px){
+            .content{
+                width: 600px;
+                margin: 0 auto;
+            }
+            .logo{
+                width: 160px;
+                height: 160px;
+                margin: 0 auto;
+            }
+            .logo img{
+                width: 100%;
+                height: 100%;
+            }
+            .introduce{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .introduce .name{
+                text-align: center;
+                font-size: 24px;
+                padding: 5px 0;
+            }
+            .introduce .name span{
+                display: inline;
+                width: auto;
+                height: auto;
+                padding: 3px 5px;
+                border-radius: 3px;
+                background: #40acf1;
+                font-size: 12px;
+                color: #fff;
+                margin: 0 5px 0 10px;
+                line-height: 1.4;
+                vertical-align: middle;
+            }
+            .introduce ul{
+                display: block;
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+            .introduce ul li{
+                display: inline-block;
+                width: auto;
+                padding: 0 10px ;
+                color: #969b9d;
+            }
+            .erwei{
+                width: 100%;
+                height: auto;
+                margin: 15px 0 50px 0;
+            }
+            .erwei .erwei_cont{
+                width: 120px;
+                height: 120px;
+                padding: 5px;
+                border: 1px solid #c2c2c2;
+                position: relative;
+                margin: 0 auto;
+            }
+            .down_btn{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .down_btn .btn_a{
+                display: inline-block;
+                width:200px;
+                height: 60px;
+                line-height: 60px;
+                background: #28caad;
+                font-size: 18px;
+                color: #ffffff;
+                border-radius: 30px;
+            }
+        }
+
+        @media (max-width: 767px){
+            .header{
+                width: 100%;
+                padding-top: 22%;
+                background-size: auto 100%;
+            }
+            .content{
+                width: 100%;
+                margin: 0 auto;
+            }
+            .logo{
+                width: 140px;
+                height: 140px;
+                margin: 0 auto;
+            }
+            .logo img{
+                width: 100%;
+                height: 100%;
+            }
+            .introduce{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .introduce .name{
+                text-align: center;
+                font-size: 24px;
+                padding: 5px 0;
+            }
+            .introduce .name span{
+                display: inline;
+                width: auto;
+                height: auto;
+                padding: 3px 5px;
+                border-radius: 3px;
+                background: #40acf1;
+                font-size: 12px;
+                color: #fff;
+                margin: 0 5px 0 10px;
+                line-height: 1.4;
+                vertical-align: middle;
+            }
+            .introduce ul{
+                display: block;
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+            .introduce ul li{
+                display: inline-block;
+                width: auto;
+                padding: 0 10px ;
+                color: #969b9d;
+            }
+            .erwei{
+                width: 100%;
+                height: auto;
+                margin: 15px 0 30px 0;
+            }
+            .erwei .erwei_cont{
+                width: 120px;
+                height: 120px;
+                padding: 5px;
+                border: 1px solid #c2c2c2;
+                position: relative;
+                margin: 0 auto;
+            }
+            .down_btn{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .down_btn .btn_a{
+                display: inline-block;
+                width:200px;
+                height: 60px;
+                line-height: 60px;
+                background: #28caad;
+                font-size: 18px;
+                color: #ffffff;
+                border-radius: 30px;
+            }
+        }
+        .erwei_cont img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="main" style="">
+    <div class="header"></div>
+    <div class="content">
+        <div class="logo">
+            <img src="images/Icon-60@3x.png" alt="logo">
+        </div>
+        <div class="introduce">
+            <h2 class="name">
+                BCAC钱包
+            </h2>
+            <div class="text" style="display: none;">
+                <ul>
+                    <li class="appVersion">版本：1.0.1</li>
+                    <li class="appSize">大小：6.8 MB</li>
+                    <li class="appTime">更新时间：2018-07-03</li>
+                </ul>
+            </div>
+        </div>
+        <div class="erwei">
+            <div class="erwei_cont" id="code">
+                <img src="images/walletUrl.png" alt="">
+            </div>
+        </div>
+        <div class="down_btn" style="display: none;">
+            <a class="btn_a" href="https://www.pgyer.com/btOg">点击安装</a>
+        </div>
+        <div class="" style="text-align: center;font-size: 16px">手机扫描二维码安装</div>
+    </div>
+</div>
+
+<script src="js/jquery.1.11.min.js"></script>
+<script src="js/jquery.qrcode.min.js"></script>
+<script src="js/urlConfig.js"></script>
+<!--<script>-->
+    <!--$(function () {-->
+
+        <!--$(".btn_a").attr("href",iosDownUrl);-->
+        <!--$(".appVersion").html(appVersion);-->
+        <!--$(".appSize").html(appSize);-->
+        <!--$(".appTime").html(appTime);-->
+
+        <!--$("#code").qrcode({-->
+            <!--render: "canvas", //table方式-->
+            <!--width: 120, //宽度-->
+            <!--height:120, //高度-->
+            <!--text:nowUrl //任意内容-->
+        <!--});-->
+
+
+        <!--// var u = navigator.userAgent, app = navigator.appVersion;-->
+        <!--// var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g-->
+        <!--// var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端-->
+        <!--// if (isAndroid) {-->
+        <!--//     //这个是安卓操作系统-->
+        <!--// }-->
+        <!--// if (isIOS) {-->
+        <!--//     //这个是ios操作系统-->
+        <!--// }-->
+
+        <!--if(IsPC()){//在pc端-->
+            <!--$(".main").show();-->
+            <!--$(".down_btn").hide();-->
+            <!--$(".text").hide();-->
+        <!--}else {-->
+            <!--if(checkIos()){-->
+                <!--// $(".main").show();-->
+                <!--window.location.href = iosDownUrl;-->
+            <!--}else {-->
+                <!--window.location.href = AndroidDownUrl;-->
+            <!--}-->
+        <!--}-->
+
+        <!--//检查设备-->
+        <!--function checkIos() {-->
+            <!--var u = navigator.userAgent;-->
+            <!--var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端-->
+            <!--var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端-->
+            <!--if (isiOS){-->
+                <!--return true;-->
+            <!--}else {-->
+                <!--return false;-->
+            <!--}-->
+        <!--}-->
+        <!--function IsPC() {-->
+            <!--var userAgentInfo = navigator.userAgent;-->
+            <!--var Agents = ["Android", "iPhone",-->
+                <!--"SymbianOS", "Windows Phone",-->
+                <!--"iPad", "iPod"];-->
+            <!--var flag = true;-->
+            <!--for (var v = 0; v < Agents.length; v++) {-->
+                <!--if (userAgentInfo.indexOf(Agents[v]) > 0) {-->
+                    <!--flag = false;-->
+                    <!--break;-->
+                <!--}-->
+            <!--}-->
+            <!--return flag;-->
+        <!--}-->
+
+    <!--})-->
+<!--</script>-->
+</body></html>
